@@ -5,19 +5,6 @@
     border: 0;
 }
 
-html,
-body {
-    min-height: 100vh;
-    margin: 0;
-    font-size: 10px;
-}
-
-body {
-    font-family: sans-serif;
-    font-weight: 300;
-    background-color: lightgray;
-}
-
 ul,
 ol {
     list-style: none;
@@ -39,22 +26,21 @@ a {
     align-items: center;
     justify-content: space-around;
     height: 150px;
-    padding: 15px 0px 2px 0px;
-    background-color: #000;
+    background-color: rgb(61, 61, 61);
+    box-shadow: 0 0.2em rgba(133, 133, 133, 0.5);
 }
 
 .container-logo {
     display: flex;
     width: 25%;
+    height: 150px;
     align-items: center;
     justify-content: center;
 }
 
-.logotipo {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    color: black;
+.logo-link img {
+    width: 100%;
+    height: 150px;
 }
 
 .container-form {
@@ -75,7 +61,7 @@ a {
     padding: 7px 35px 7px 7px;
     border-radius: 3px;
     height: 45px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .nav-bottom,
@@ -118,39 +104,98 @@ a {
 
 .container-carrossel {
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 100%;
-    height: 320px;
-    padding: 10px 0px;
+    height: 400px;
+    padding: 20px 0px 0px 0px;
     gap: 15px;
-    border: 1px solid rgb(255, 255, 255);
+}
+
+.carossel-content {
+    background-color: rgba(212, 214, 216, 0.5);
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .carossel-imgs-center {
     background-color: rgb(119, 110, 110);
-    width: 60%;
-    height: 315px;
+    width: 50%;
+    height: 350px;
 }
 
 .container-carossel-lateral {
-    background-color: green;
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20%;
-    height: 315px;
+    height: 350px;
 }
 
 .carossel-imgs-lateral {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
+    gap: 7px;
 }
 
-.img-lateral {
-    background-color: rgb(67, 141, 85);
-    width: 90%;
-    height: 140px;
+.carossel-imgs-lateral a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-lateral img {
+    width: 100%;
+    height: 170px;
+    border-radius: 1px;
+}
+
+
+/*----FIM CAROSSEL----*/
+
+
+/*---INICIO SERVIÇOS----*/
+
+.container-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 320px;
+    gap: 10px;
+    padding: 15px 0px;
+    margin-top: 35px;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.service-span {
+    font-size: 25pt;
+}
+
+.list-service {
+    width: 100%;
+    height: 318px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-service ul {
+    display: flex;
+    gap: 100px;
+}
+
+.service-imgs img {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    border-radius: 50%;
 }
