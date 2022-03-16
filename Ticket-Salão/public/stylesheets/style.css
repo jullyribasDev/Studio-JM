@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,400&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400&family=Ropa+Sans&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul,
@@ -47,12 +49,12 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
+    width: 60%;
 }
 
 .search-form {
     display: flex;
-    width: 70%;
+    width: 55%;
 }
 
 .search-form_input {
@@ -75,25 +77,44 @@ a {
     gap: 30px;
 }
 
-.container-nav-rigth {
-    display: flex;
-    width: 25%;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.nav-rigth {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.nav-left a:hover {
+    background-color: rgb(158, 153, 153);
 }
 
 .nav-rigth ul {
     display: flex;
-    font-size: 13pt;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    font-size: 13pt;
+    gap: 20px;
+}
+
+.container-nav-rigth {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 45px 0px;
+    width: 20%;
+}
+
+.nav-login a {
+    background-color: rgb(147, 148, 148);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 60px;
+    height: 30px;
+    border-radius: 2px;
+    transition: all 0s;
+}
+
+.nav-cadastro:hover {
+    background-color: rgb(158, 153, 153);
+}
+
+.nav-login a:hover {
+    background-color: rgb(238, 166, 76);
+    font-weight: bold;
 }
 
 
@@ -106,7 +127,6 @@ a {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 400px;
     padding: 20px 0px 0px 0px;
     gap: 15px;
 }
@@ -114,6 +134,7 @@ a {
 .carossel-content {
     background-color: rgba(212, 214, 216, 0.5);
     width: 99%;
+    height: 420px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,6 +175,48 @@ a {
 
 
 /*----FIM CAROSSEL----*/
+
+
+/*----INICIO SOBRE----*/
+
+.container-sobre {
+    display: flex;
+    width: 100%;
+    height: 450px;
+}
+
+.content-sobre-salao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.content-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.content-sobre p {
+    padding: 0px 30px 0px 0px;
+}
+
+.img-sobre img {
+    width: 100%;
+    height: 320px;
+    border-radius: 10%;
+}
+
+
+/*---- FINAL SOBRE ----*/
 
 
 /*---INICIO SERVIÇOS----*/
