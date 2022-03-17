@@ -185,28 +185,35 @@ a {
 .container-sobre {
     display: flex;
     width: 100%;
-    height: 490px;
+    height: 700px;
+    margin-top: 50px;
+}
+
+.content-sobre {
+    display: flex;
+    width: 100%;
+    height: 700px;
 }
 
 .container-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 45%;
 }
 
 .img-sobre img {
     width: 100%;
-    height: 400px;
-    border-radius: 40%;
+    height: 500px;
+    border-radius: 1%;
 }
 
 .container-sobre-txt {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 60%;
-    padding: 0px 50px 0px 0px;
+    justify-content: flex-start;
+    width: 55%;
+    padding: 70px 70px 0px 60px;
     gap: 40px;
 }
 
@@ -227,7 +234,7 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 450px;
+    height: 480px;
     padding: 15px 0px;
     margin-top: 35px;
 }
@@ -238,9 +245,9 @@ a {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    height: 445px;
+    height: 480px;
     padding: 20px 20px;
-    gap: 20px;
+    gap: 40px;
     background-color: rgba(212, 214, 216, 0.5);
 }
 
@@ -284,3 +291,54 @@ a {
     display: flex;
     border-radius: 50%;
 }
+
+
+/*----FIM SERVIÇOS----*/
+
+
+/*----Inicio Depoimentos----*/
+
+.container-depoiments {
+    width: 100%;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12pt;
+    margin-top: 30px;
+    gap: 35px;
+    padding: 0px 20px;
+}
+
+.container-depoiments span {
+    font-size: 25pt;
+    font-weight: bold;
+    color: rgb(80, 77, 77);
+}
+
+.content-depoiments {
+    display: flex;
+    gap: 15px;
+    width: 98%;
+}
+
+.depoiment-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgb(94, 92, 92);
+    padding: 20px 50px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.depoiment-img img {
+    width: 100%;
+    height: 150px;
+    border-radius: 30%;
+}
+
+
+/*----Fim Depoimentos----*/
