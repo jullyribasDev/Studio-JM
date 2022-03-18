@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
+
+.content-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.caixa-form {
+    justify-content: center;
+}
+
+.content-form-log {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/*- cadastro-*/
+
+.container-cadastro {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
+
+.content-cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.caixa-form {
+    justify-content: center;
+}
+
+.content-form-cad {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
