@@ -394,8 +394,8 @@ a {
     padding: 10px 0px;
 }
 
-.links-lista li:hover {
-    background-color: rgb(158, 153, 153);
+.links-lista a:hover {
+    text-decoration: underline;
     border-radius: 5px;
 }
 
@@ -423,8 +423,4 @@ a {
     width: 31px;
     height: 31px;
     border-radius: 5px;
-}
-
-.redes-img:hover {
-    background-color: rgb(158, 153, 153);
 }
