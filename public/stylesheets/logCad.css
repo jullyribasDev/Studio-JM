@@ -17,12 +17,13 @@ a {
 
 .container {
     display: flex;
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgba(179, 163, 163, 0.6);
 }
 
 .container-login {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 50%;
     height: 100vh;
 }
@@ -30,19 +31,119 @@ a {
 .content-login {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    padding: 40px 40px;
+    width: 50%;
+    height: 60vh;
+    background-color: rgb(255, 251, 251);
+    box-shadow: 0px 0px 5px 0px #302d2de6;
+    border-radius: 3px;
 }
 
 .caixa-form {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45vh;
 }
 
 .content-form-log {
     display: flex;
     flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.content-input {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content-input .log-input {
+    height: 5vh;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: all 0.2s ease 0.1s;
+}
+
+.content-input .log-input:hover {
+    border-color: rgb(68, 67, 67);
+    font-size: 11pt;
+}
+
+.botton-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+}
+
+.botton-submit .log-submit {
+    width: 40%;
+    border-radius: 5px;
+    font-size: 13pt;
+    height: 5vh;
+    transition: all 0.2s ease 0s;
+    border: 0;
+    box-shadow: 0px 0px 3px 0px rgba(48, 45, 45, 0.9);
+}
+
+.botton-submit .log-submit:hover {
+    background-color: rgba(179, 163, 163, 0.6);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.redes-log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    padding: 30px 0px 5px 0px;
+}
+
+.redes-log .span-log {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container-nav-log {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-nav-log {
+    display: flex;
+    height: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     gap: 10px;
+}
+
+.content-nav-log li {
+    width: 18%;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-img img {
+    width: 100%;
+    height: 4.3vh;
+    border-radius: 5px;
 }
 
 
@@ -61,10 +162,6 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
-}
-
-.caixa-form {
-    justify-content: center;
 }
 
 .content-form-cad {
