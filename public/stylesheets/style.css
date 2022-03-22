@@ -362,6 +362,11 @@ a {
     padding: 10px 0px;
 }
 
+.logo-footer {
+    width: 160px;
+    height: 160px;
+}
+
 .links-lista a:hover {
     text-decoration: underline;
     border-radius: 5px;
