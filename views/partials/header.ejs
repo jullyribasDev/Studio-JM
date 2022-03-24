@@ -1,5 +1,5 @@
-<header class="container-header">
-    <div class="container-logo">
+<header class="container-header" id="navbar">
+    <div class="container-logo" id="navlogo">
         <a class="logo-link" href="/"><img src="/img/logo_dourado_transparente.png" alt="logotipo"></a>
     </div>
     <nav class="container-form">
@@ -12,4 +12,19 @@
             </li>
         </ul>
     </nav>
+    <script>
+        var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        navlogo = document.getElementById("navlogo");
+        window.addEventListener("scroll", function() {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                navbar.style.background = "#050505";
+                navlogo.style.background = "transparent";
+            } else {
+                navbar.style.background = "transparent";
+                navlogo.style.background = "#050505";
+            }
+        })
+    </script>
 </header>
