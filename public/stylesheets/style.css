@@ -11,6 +11,8 @@ body,
 html {
     width: 100%;
     height: 100%;
+    /* width: 1440px;
+    margin: 0 auto; */
 }
 
 ul,
@@ -339,4 +341,56 @@ a {
     width: 31px;
     height: 31px;
     border-radius: 5px;
+}
+
+/* Página Equipe */
+.container-equipe {
+    width: 100%;
+    height: 1000px;
+    background-color: #e9eaeb;
+    display: flex;
+}
+
+.equipe {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.equipe-lista {
+    width: 60%;
+    height: 440px;
+    background-color: #e0e1e1;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.equipe-img {
+    width: 50%;
+}
+
+.equipe-texto {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+	margin: 1.5em;
+	border: 0;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	color: #FFF;
+	background: rgba(255, 0, 0, 0.796);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	border-radius: 0.5em;
+	box-shadow: 3px 3px 0 3px #930;
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+button:active {
+    box-shadow: 0 0 0 0 #930, inset 4px 4px 4px #930;
+    transform: translate(6px, 6px);
 }
