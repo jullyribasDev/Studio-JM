@@ -61,6 +61,13 @@ a {
     height: 120px;
 }
 
+.container-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
 .container-form .left-navbar {
     display: flex;
     gap: 40px;
@@ -70,12 +77,59 @@ a {
 .left-navbar .nav-left a {
     color: #ffffff;
     font-size: 14pt;
+    transition: 0.2s;
 }
 
 .left-navbar .nav-left a:hover {
     background-color: rgb(218, 216, 216);
     color: rgb(59, 59, 59);
     border-radius: 2px;
+}
+
+.nav-log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cadastro {
+    font-size: 14pt;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.cadastro:hover {
+    text-decoration: underline;
+}
+
+.login {
+    color: #ffffff;
+    font-size: 14pt;
+    font-weight: bold;
+    background-color: #075169;
+    padding: 10px 45px 10px 15px;
+    border-radius: 2px;
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px 0px #075169;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.login:hover {
+    box-shadow: 0px 0px 10px 0px rgb(155, 107, 38);
+    background-color: rgb(155, 107, 38);
+    color: #080808;
+    font-weight: bolder;
+}
+
+.log-img {
+    position: absolute;
+    right: 5px;
+    width: 29px;
+    height: 29px;
 }
 
 
@@ -89,6 +143,37 @@ a {
     width: 100%;
     height: 95%;
     background-repeat: no-repeat;
+}
+
+.line-carossel {
+    position: absolute;
+    height: 70px;
+    width: 10px;
+    background-color: #9b6b26;
+    top: 600px;
+    left: 5%;
+}
+
+.text-carossel-h1 {
+    position: absolute;
+    width: 40%;
+    top: 600px;
+    left: 6%;
+    font-size: 25pt;
+    font-weight: 600;
+    color: rgb(110, 82, 31);
+}
+
+.text-carossel {
+    position: absolute;
+    width: 40%;
+    top: 640px;
+    left: 6%;
+    text-align: justify;
+    font-size: 16pt;
+    font-weight: 600;
+    padding-right: 20px;
+    color: rgb(250, 250, 250);
 }
 
 
