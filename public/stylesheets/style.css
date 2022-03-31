@@ -36,7 +36,7 @@ a {
     top: 0;
     width: 100%;
     background: transparent;
-    padding: 2px 100px;
+    padding: 10px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +48,8 @@ a {
     left: 0;
     height: 120px;
     border-radius: 50%;
-    background-color: #050505;
+    background-color: #075169;
+    transition: 0.3s;
 }
 
 .logo-link {
@@ -310,7 +311,7 @@ a {
 }
 
 .content-li-service:hover {
-    box-shadow: 0px 0px 40px 0px rgb(121, 120, 120);
+    box-shadow: 0px 0px 15px 0px rgb(121, 120, 120);
 }
 
 .service-imgs {
@@ -332,44 +333,99 @@ a {
 
 .container-depoiments {
     width: 100%;
-    height: 510px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    font-size: 12pt;
-    margin-top: 30px;
-    gap: 35px;
-    padding: 0px 20px;
+    justify-content: center;
 }
 
-.container-depoiments span {
-    font-size: 25pt;
-    font-weight: bold;
-    color: rgb(80, 77, 77);
+.span-depoiments::before {
+    content: "";
+    width: 41%;
+    height: 20px;
+    display: block;
+    background-color: #993300;
+    position: absolute;
+    left: 0;
+    box-shadow: 0px 0px 1px 0px #993300;
 }
+
+.span-depoiments {
+    font-size: 25pt;
+    font-weight: 700;
+    color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #993300;
+    border-radius: 4px;
+    padding: 10px 35px;
+    box-shadow: 0px 0px 1px 0px #993300;
+}
+
+.span-depoiments::after {
+    content: " ";
+    width: 41%;
+    height: 20px;
+    display: block;
+    background-color: #993300;
+    position: absolute;
+    right: 0;
+    box-shadow: 0px 0px 1px 0px #993300;
+}
+
+
+/*.span-depoiments {
+    position: absolute;
+    font-size: 30pt;
+    font-weight: 800;
+    color: rgb(250, 250, 250);
+    background-color: #993300;
+    width: 500px;
+    height: 120px;
+    left: 0;
+    top: 0;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 1px 0px #993300;
+}*/
 
 .content-depoiments {
     display: flex;
-    gap: 15px;
-    width: 98%;
-}
-
-.depoiment-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 0.5px solid rgb(94, 92, 92);
-    padding: 20px 50px;
-    gap: 20px;
-    border-radius: 10px;
-}
-
-.depoiment-img img {
     width: 100%;
-    height: 150px;
-    border-radius: 30%;
+    height: 70%;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.depoiment-caixa {
+    display: flex;
+    width: 30%;
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    text-align: justify;
+    font-weight: 500;
+    gap: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px 0px rgb(163, 162, 162);
+}
+
+.img-depoiments {
+    border: 1px solid red;
+    width: 50%;
+    height: 50%;
+}
+
+.img-depoiments img {
+    width: 100%;
+    height: 100%;
 }
 
 
