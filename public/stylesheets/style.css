@@ -113,16 +113,15 @@ a {
     padding: 10px 45px 10px 15px;
     border-radius: 2px;
     transition: 0.2s;
-    box-shadow: 0px 0px 5px 0px #075169;
+    box-shadow: 0px 0px 3px 0px #075169;
     position: relative;
     display: flex;
     align-items: center;
 }
 
 .login:hover {
-    box-shadow: 0px 0px 10px 0px rgb(155, 107, 38);
-    background-color: rgb(155, 107, 38);
-    color: #080808;
+    box-shadow: 0px 0px 5px 0px #063342;
+    background-color: #063342;
     font-weight: bolder;
 }
 
@@ -265,9 +264,9 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
     width: 100%;
     height: 100%;
+    padding: 90px 0 0 0;
 }
 
 .service-span {
@@ -279,7 +278,7 @@ a {
     width: 500px;
     height: 130px;
     left: 0;
-    top: 50px;
+    top: -70px;
     border-top-right-radius: 20px;
     display: flex;
     justify-content: center;
@@ -290,24 +289,27 @@ a {
 
 .list-service {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 95%;
-    gap: 20px;
+    height: 65%;
+    gap: 12px;
 }
 
 .content-li-service {
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 16px;
     gap: 10px;
-    padding: 12px 20px;
+    padding: 12px 20px 0 20px;
     text-align: justify;
     box-shadow: 0px 0px 2px 0px rgb(163, 162, 162);
     border-radius: 5px;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 .content-li-service:hover {
@@ -325,6 +327,25 @@ a {
     height: 100%;
 }
 
+.nav-agend {
+    margin-top: 15px;
+    width: 80px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 #073342;
+    background-color: #075169;
+    font-size: 16px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.nav-agend:hover {
+    background-color: #073342;
+}
+
 
 /*----FIM SERVIÇOS----*/
 
@@ -337,18 +358,19 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    position: relative;
+    padding-top: 80px;
 }
 
-.span-depoiments::before {
-    content: "";
-    width: 41%;
-    height: 20px;
-    display: block;
+.container-depoiments::before {
+    content: " ";
+    width: 935px;
+    height: 2px;
     background-color: #993300;
     position: absolute;
-    left: 0;
-    box-shadow: 0px 0px 1px 0px #993300;
+    z-index: 1;
+    top: 5px;
+    right: 565px;
 }
 
 .span-depoiments {
@@ -356,48 +378,22 @@ a {
     font-weight: 700;
     color: rgb(250, 250, 250);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     background-color: #993300;
-    border-radius: 4px;
-    padding: 10px 35px;
+    border-top-left-radius: 20px;
     box-shadow: 0px 0px 1px 0px #993300;
-}
-
-.span-depoiments::after {
-    content: " ";
-    width: 41%;
-    height: 20px;
-    display: block;
-    background-color: #993300;
     position: absolute;
+    top: -60px;
     right: 0;
-    box-shadow: 0px 0px 1px 0px #993300;
-}
-
-
-/*.span-depoiments {
-    position: absolute;
-    font-size: 30pt;
-    font-weight: 800;
-    color: rgb(250, 250, 250);
-    background-color: #993300;
     width: 500px;
-    height: 120px;
-    left: 0;
-    top: 0;
-    border-top-right-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px;
-    box-shadow: 0px 0px 1px 0px #993300;
-}*/
+    height: 130px;
+}
 
 .content-depoiments {
     display: flex;
-    width: 100%;
-    height: 70%;
+    width: 97%;
+    height: 80;
     gap: 20px;
     justify-content: center;
     padding-top: 30px;
@@ -405,8 +401,8 @@ a {
 
 .depoiment-caixa {
     display: flex;
-    width: 30%;
-    height: 90%;
+    width: 29%;
+    height: 80%;
     flex-direction: column;
     align-items: center;
     padding: 20px 30px;
@@ -419,13 +415,23 @@ a {
 
 .img-depoiments {
     border: 1px solid red;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 45%;
 }
 
 .img-depoiments img {
     width: 100%;
     height: 100%;
+}
+
+.container-depoiments::after {
+    content: " ";
+    width: 1380px;
+    height: 2px;
+    background-color: #993300;
+    position: absolute;
+    z-index: 1;
+    bottom: 100px;
 }
 
 
