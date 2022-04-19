@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/cliente.css">
+
+
+    <title>Cadastro do Cliente</title>
+    
+</head>
+<body>
+    <header> 
+        <img src="/img/logo_dourado_transparente.png" alt="logo Studio JM" width="150"> 
+        <nav class = "navbar">      
+            <ul >
+                <li>Voltar</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-container">
+        <h1>Faça o Seu Cadastro</h1>
+        <form id="register-form">
+            <div class="half-box spacing">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
+            </div>
+            <div class="half-box spacing">
+                <label for="nome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
+            </div>
+            <div class="full-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="seu@email">
+            </div>
+            <div class="full-box">
+                <label for="nome">Endereço</label>
+                <input type="text" name="endereço" id="endereço" placeholder="Digite seu endereço">
+            </div>
+            <div class="half-box spacing">
+                <label for="complemento">Complemento</label>
+                <input type="text" name="complemento" id="complemento" placeholder="complemento">
+            </div>
+            <div class="half-box spacing">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" placeholder="cidade">
+            </div>
+            <div class="half-box spacing">
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" placeholder="Digite o bairro">
+            </div>
+            <div class="half-box spacing">
+                <label for="cep">Cep</label>
+                <input type="number" name="cep" id="cep" placeholder="Digite o cep">
+            </div>
+            
+            <div class="half-box spacing">
+                <label for="password">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Crie uma senha">
+            </div>
+            <div class="half-box">
+                <label for="pass confirmation">Confirme a senha</label>
+                <input type="password" name="pass confirmation" id="pass confirmation" placeholder="Confirme sua senha">
+            </div>
+            <div class="full-box">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="agreement-label"> Eu li e aceito os <a href='#'>termos de uso</a></label>
+            </div>
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="Cadastrar">
+            </div>
+        </form>
+    </div>
+    <footer class="container-footer">
+        <div class="links">
+            <img class="logo-footer" src="/img/logo_preto_dourado_transparente.png" alt="">
+            <ul class="links-lista">
+                <li class="links-itens"><a href="#">Equipe</a></li>
+                <li class="links-itens"><a href="#">Sobre</a></li>
+                <li class="links-itens"><a href="#">Serviços</a></li>
+                <li class="links-itens"><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    
+        <div class="rede-sociais">
+            <h3 class="rede-titulos">Nossas redes</h3>
+            <ul class="redes-lista">
+                <li class="redes-itens">
+                    <a href="#"><img class="redes-img" src="/img/whatsapp.png" alt=""></a>
+                </li>
+                <li class="redes-itens">
+                    <a href="#"><img class="redes-img" src="/img/facebook.png" alt=""></a>
+                </li>
+                <li class="redes-itens">
+                    <a href="#"><img class="redes-img" src="/img/instagram.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

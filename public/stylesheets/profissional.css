@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica,sans-serif;
+    color:#7a6f6f;   
+    border:none;
+    
+}
+/*cabecalho */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;  
+    background-color: #737373;  
+    opacity: 0.95;
+}
+.navbar{
+    margin-top: 10px;
+
+}
+li{
+    display: inline-block;
+    padding: 15px;    
+    margin: 0;
+    color: #323232;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/*pagina fundo*/
+
+input,label{
+    display: block;
+    width: 100%;
+}
+a{
+    color:#2a00e6;
+}
+body{
+   
+    background-image: url('/img/salao.jpg');
+    background-size: cover;
+    background-position-y:-150px;
+    
+}
+/*formulario*/
+
+#main-container {
+    width:700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 15px;
+}
+
+#main-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+}
+.full-box{
+    flex:1 1 100%;
+    position: relative;
+}
+.half-box{
+    flex:1 1 45%;
+    position: relative;
+}
+h2{
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+h3{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+.full1-box{
+    flex: 1 1 80%;
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-wrap:unset;
+    margin-right: 80px;
+    margin-top: 5%;
+}
+
+.full2-box{
+    flex: 1 1 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;   
+}
+select{
+    display: flex;
+    justify-content: center;
+    box-shadow:2px 2px 2px rgba(68, 20, 20, 0.2);
+    font-size: 0.9rem
+
+}
+.spacing{
+    margin-right: 2.5%
+}
+label{
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size:0.9rem;
+    margin-bottom: 40px;
+}
+
+
+
+
+input:focus{
+    border-color:rgb(188 206 251);
+}
+input[type="submit"]{
+    background-color: rgb(188 206 251);
+    color: #111010;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+#agreement{
+    margin-right: 5px;
+}
+#agreement,#agreement-label{
+    display:inline-block;
+    width:auto;
+}
+
+/*footer*/
+
+.container-footer {
+    display: flex;
+    width: 100%;
+    height: 190px;
+    background-color: #050505;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    line-height: 24px;
+}
+
+.links-lista {
+    border: 1px solid #ccc;
+    gap: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px 0px;
+}
+
+.logo-footer {
+    width: 160px;
+    height: 160px;
+}
+
+.links-lista a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+.rede-sociais {
+    /* background-color: blue; */
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.rede-titulos {
+    text-align: center;
+    color: #ccc;
+}
+
+.redes-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.redes-img {
+    width: 31px;
+    height: 31px;
+    border-radius: 5px;
+}
+
+
+/* Página Equipe */
+
+.container-footer {
+    display: flex;
+    width: 100%;
+    height: 190px;
+    background-color: #050505;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    line-height: 24px;
+}
+
+.links-lista {
+    border: 1px solid #ccc;
+    gap: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px 0px;
+}
+
+.logo-footer {
+    width: 160px;
+    height: 160px;
+}
+
+.links-lista a:hover {
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+.rede-sociais {
+    /* background-color: blue; */
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.rede-titulos {
+    text-align: center;
+    color: #ccc;
+}
+
+.redes-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.redes-img {
+    width: 31px;
+    height: 31px;
+    border-radius: 5px;
+}
+
+
+/* Página Equipe */
+
+.container-equipe-img {
+    background-image: url("/img/equipe-img-header.jpg");
+    width: 150%;
+    /* width: 1440px; */
+    height: 650px;
+    background-repeat: no-repeat;
+}
+
+.container-equipe {
+    width: 100%;
+    /* height: 1000px; */
+    background-color: #e9eaeb;
+    display: flex;
+}
+
+.equipe {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.equipe-lista {
+    width: 70%;
+    height: 440px;
+    background-color: #e0e1e1;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.equipe-img {
+    width: 50%;
+}
+
+.equipe-texto {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    margin: 1.5em;
+    border: 0;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #FFF;
+    background: rgba(255, 0, 0, 0.796);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5em;
+    box-shadow: 3px 3px 0 3px #930;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+button:active {
+    box-shadow: 0 0 0 0 #930, inset 4px 4px 4px #930;
+    transform: translate(6px, 6px);
+}
