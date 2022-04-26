@@ -3,9 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: helvetica,sans-serif;
-    color:#7a6f6f;   
+    color:black;   
     border:none;
-    
 }
 /*cabecalho */
 header{
@@ -13,21 +12,19 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;  
-    background-color: #737373;  
-    opacity: 0.95;
-}
-.navbar{
-    margin-top: 10px;
+    background-color: #2e2c2c;
 
 }
+.navbar{
+    align-items: center;
+}
+
 li{
     display: inline-block;
-    padding: 15px;    
-    margin: 0;
-    color: #323232;
+    padding: 50px;    
+    color: #f1e4e4;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /*pagina fundo*/
@@ -52,7 +49,7 @@ body{
     width:500px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff;
+    background-color:#d1cece;
     border-radius: 10px;
     padding: 25px;
     margin-top: 15px;
@@ -63,11 +60,17 @@ body{
     margin-bottom: 25px;
     font-size: 1.6rem;
 }
+h2{
+    text-align: center;
+    font-size: 10px;
+    color: #6e6767;
+}
 
 form{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;    
+    justify-content: space-between;   
+     
 }
 .full-box{
     flex:1 1 100%;
@@ -85,19 +88,45 @@ label{
     font-size: 0.8rem;
 }
 input{
-    border-bottom: 2px solid #323232;
+    border-radius:5px;
     padding: 10px;
     font-size:0.9rem;
     margin-bottom: 40px;
+}
+select{
+    border:3px;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    color: #050505;
+    
 }
 input:focus{
     border-color:rgb(188 206 251);
 }
 input[type="submit"]{
-    background-color: rgb(188 206 251);
-    color: #111010;
-    border-radius: 20px;
+    background-color:#C16906;
+    color: #FFF;
     height: 40px;
+    cursor: pointer;
+}
+input[type="submitF"]{
+    background-color:#3B5998;
+    position: relative;
+    text-align: center;
+    border: none;
+    color:white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+input[type="submitG"]{
+    background-color:#DB4A39;
+
+    position: relative;
+    text-align: center;
+    border: none;
+    color:white;
+    margin-top: 20px;
     cursor: pointer;
 }
 #agreement{
@@ -106,6 +135,11 @@ input[type="submit"]{
 #agreement,#agreement-label{
     display:inline-block;
     width:auto;
+}
+h3{
+    font-size: 10px;
+    margin-left: 38%;
+    
 }
 
 /*footer*/
@@ -117,6 +151,8 @@ input[type="submit"]{
     background-color: #050505;
     align-items: center;
     justify-content: space-around;
+    margin-top: 10%;
+    
 }
 
 .links {
@@ -140,6 +176,7 @@ input[type="submit"]{
 .logo-footer {
     width: 160px;
     height: 160px;
+
 }
 
 .links-lista a:hover {
@@ -194,7 +231,7 @@ input[type="submit"]{
 
 .links-lista {
     border: 1px solid #ccc;
-    gap: 10px;
+    gap: 1px;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -204,8 +241,8 @@ input[type="submit"]{
 }
 
 .logo-footer {
-    width: 160px;
-    height: 160px;
+    width: 100px;
+    height: 100px;
 }
 
 .links-lista a:hover {
@@ -230,7 +267,7 @@ input[type="submit"]{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 5px;
 }
 
 .redes-img {
@@ -296,6 +333,9 @@ button {
     box-shadow: 3px 3px 0 3px #930;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+
+
+
 
 button:active {
     box-shadow: 0 0 0 0 #930, inset 4px 4px 4px #930;

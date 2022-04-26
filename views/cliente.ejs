@@ -24,12 +24,12 @@
         <h1>Faça o Seu Cadastro</h1>
         <form id="register-form">
             <div class="half-box spacing">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome completo">
             </div>
             <div class="half-box spacing">
-                <label for="nome">Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
+                <label for="nome">UserName</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu Username">
             </div>
             <div class="full-box">
                 <label for="email">E-mail</label>
@@ -64,15 +64,44 @@
                 <label for="pass confirmation">Confirme a senha</label>
                 <input type="password" name="pass confirmation" id="pass confirmation" placeholder="Confirme sua senha">
             </div>
+            <div class="half-box spacing">
+                <label for="date">Data de Nascimento</label>
+                <input type="date" name="date" id="date" placeholder="data de nascimento">
+            </div>
+            <div class="half-box">
+                <label for="Seu sexo">Informa seu Sexo</label>
+                <select name="sexo" id="sexo">
+                    <option value = "Mas">Masculino</option>
+                    <option value="Fem">Feminino</option>
+                    <option value="info">Não informar</option>                    
+                </select>
+            </div>
             <div class="full-box">
                 <input type="checkbox" name="agreement" id="agreement">
                 <label for="agreement" id="agreement-label"> Eu li e aceito os <a href='#'>termos de uso</a></label>
             </div>
             <div class="full-box">
-                <input type="submit" id="btn-submit" value="Cadastrar">
+                <input type="submit" id="btn-submit" value="Cadastrar-se">
             </div>
+        
+    
+            <div class="full-box">
+            <h2>_______________  ou  _______________</h2>
+            </div>
+            <div class="Half-box">
+            <input type="submitF" id="btn-submit" value="facebook">
+            </div>
+            <div class="Half-box">
+            <input type="submitG" id="btn-submit" value="Google">
+            </div>
+            
+            <h3>Tem uma conta? <a href='#'>Entre</a></h3>
         </form>
     </div>
+    
+
+    
+
     <footer class="container-footer">
         <div class="links">
             <img class="logo-footer" src="/img/logo_preto_dourado_transparente.png" alt="">

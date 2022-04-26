@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: helvetica,sans-serif;
-    color:#7a6f6f;   
+    color:#000000;   
     border:none;
     
 }
@@ -13,21 +13,21 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;  
+    padding: 3px;  
     background-color: #737373;  
-    opacity: 0.95;
+    
 }
 .navbar{
-    margin-top: 10px;
+    align-items: center;
 
 }
 li{
     display: inline-block;
     padding: 15px;    
     margin: 0;
-    color: #323232;
+    color: #f5ecec;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /*pagina fundo*/
@@ -49,10 +49,10 @@ body{
 /*formulario*/
 
 #main-container {
-    width:700px;
+    width:500px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff;
+    background-color: rgb(184, 181, 181);
     border-radius: 10px;
     padding: 25px;
     margin-top: 15px;
@@ -80,24 +80,18 @@ form {
 h2{
     margin-left: auto;
     margin-right: auto;
-    
-
 }
-h3{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
-    margin-bottom: 1%;
 
-}
 .full1-box{
-    flex: 1 1 80%;
+    flex: 1 1 100%;
     position: relative;
     display: flex;
     text-align: center;
     flex-wrap:unset;
     margin-right: 80px;
     margin-top: 5%;
+    padding: 5px;
+    margin: 1px;
 }
 
 .full2-box{
@@ -108,12 +102,26 @@ h3{
     margin-bottom: 2%;   
 }
 select{
-    display: flex;
-    justify-content: center;
-    box-shadow:2px 2px 2px rgba(68, 20, 20, 0.2);
-    font-size: 0.9rem
+        border:3px;
+        text-align: center;
+        padding: 5px;
+        font-size: 15px;
+        color: #050505;
+        margin-left: 20%;
+}
+h3{
+    font-size:15px;
+    text-align:center;
+}
+p{
+    font-size:10px;
+    text-align:center;
 
 }
+
+
+
+
 .spacing{
     margin-right: 2.5%
 }
@@ -122,23 +130,38 @@ label{
     font-size: 0.8rem;
 }
 input{
-    border-bottom: 2px solid #323232;
+    border-radius:5px;
     padding: 10px;
     font-size:0.9rem;
-    margin-bottom: 40px;
+    margin-bottom: 40px;    
 }
-
-
-
 
 input:focus{
     border-color:rgb(188 206 251);
 }
 input[type="submit"]{
-    background-color: rgb(188 206 251);
-    color: #111010;
-    border-radius: 20px;
+    background-color:#C16906;
+    color: #FFF;
     height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+input[type="submitF"]{
+    background-color:#3B5998;
+    position: relative;
+    text-align: center;
+    border: none;
+    color:white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+input[type="submitG"]{
+    background-color:#DB4A39;
+    position: relative;
+    text-align: center;
+    border: none;
+    color:white;
+    margin-top: 20px;
     cursor: pointer;
 }
 
@@ -160,6 +183,7 @@ input[type="submit"]{
     background-color: #050505;
     align-items: center;
     justify-content: space-around;
+    margin-top: 10%;
 }
 
 .links {

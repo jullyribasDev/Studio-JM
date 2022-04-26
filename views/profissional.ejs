@@ -21,12 +21,12 @@
         <h1>Faça o Seu Cadastro</h1>
         <form id="register-form">
             <div class="half-box spacing">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome Completo">
             </div>
             <div class="half-box spacing">
-                <label for="nome">Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
+                <label for="nome">Username</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu UserName">
             </div>
             <div class="full-box">
                 <label for="email">E-mail</label>
@@ -61,41 +61,62 @@
                 <label for="pass confirmation">Confirme a senha</label>
                 <input type="password" name="pass confirmation" id="pass confirmation" placeholder="Confirme sua senha">
             </div>
+            <div class="half-box">
+                <label for="date">Data de nascimento</label>
+                <input type="date" name="date" id="date" placeholder="data de nascimento">
+            </div>
+            <div class="half-box">
+                <label for="Seu sexo">Informa seu Sexo</label>
+                <select name="sexo" id="sexo">
+                    <option value = "Mas">Masculino</option>
+                    <option value="Fem">Feminino</option>
+                    <option value="info">Não informar</option>                    
+                </select>
+            </div>
             
             <h2>Meus Serviços</h2>
             
             <div class="full1-box">            
-                <input class="a" type="checkbox" name="serviços" value="massagem">
-                <label class="b" for="massagem">Massagem</label>           
-                <input class="a" type="checkbox" name="serviços" value="massagem">
+                <input  type="checkbox" name="serviços" value="massagem">
+                <label  for="massagem">Massagem</label>           
+                <input  type="checkbox" name="serviços" value="massagem">
                 <label for="massagem">Corte de Cabelo</label>
-                <input class="a" type="checkbox" name="serviços" value="massagem">
+                <input type="checkbox" name="serviços" value="massagem">
                 <label for="massagem">Maquiagem</label>
-                <input class="a" type="checkbox" name="serviços" value="massagem">
+                <input type="checkbox" name="serviços" value="massagem">
                 <label for="massagem">Pedicure e Manicure</label>
-                <input class="a" type="checkbox" name="serviços" value="massagem">
+                <input type="checkbox" name="serviços" value="massagem">
                 <label for="massagem">limpeza de Pele</label>
             </div>
-            <h3>Atendimento a Domicílio </h3>
-            <div class="full2-box">
-              <select>
-                  <option value="Sim">Sim</option>
-                  <option value="Não">Não</option>
-                  <option value="Ambos">Ambos</option>
-              </select>
+            
+            
+            <div class="half-box">
+                <label for="local">Local de Atendimento</label>
+                <select name="local" id="local">
+                    <option value = "ca">Casa</option>
+                    <option value="sa">Salão de Beleza</option>
+                    <option value="am">Ambos</option>                    
+                </select>
             </div>
-
             
-                        
-    
-            
-            
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="Cadastrar">
+            </div>
             <div class="full-box">
                 <input type="checkbox" name="agreement" id="agreement">
                 <label for="agreement" id="agreement-label"> Eu li e aceito os <a href='#'>termos de uso</a></label>
             </div>
             <div class="full-box">
-                <input type="submit" id="btn-submit" value="Cadastrar">
+                <h3>_______________  ou  _______________</h3>
+                </div>
+                <div class="Half-box">
+                <input type="submitF" id="btn-submit" value="facebook">
+                </div>
+                <div class="Half-box">
+                <input type="submitG" id="btn-submit" value="Google">
+            </div>
+            <div class="full-box">   
+            <p>Tem uma conta? <a href='#'>Entre</a></p>
             </div>
         </form>
     </div>
