@@ -147,8 +147,8 @@ h3{
 .container-footer {
     display: flex;
     width: 100%;
-    height: 190px;
-    background-color: #050505;
+    height: 170px;
+    background-color: #524646;
     align-items: center;
     justify-content: space-around;
     margin-top: 10%;
@@ -159,23 +159,25 @@ h3{
     width: 20%;
     display: flex;
     justify-content: center;
-    line-height: 24px;
+    line-height: 10px;
 }
 
 .links-lista {
     border: 1px solid #ccc;
-    gap: 10px;
+   
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
-    padding: 10px 0px;
 }
 
 .logo-footer {
     width: 160px;
     height: 160px;
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
 
 }
 
@@ -189,78 +191,18 @@ h3{
     width: 450px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
+    margin-left: auto;
 }
 
 .rede-titulos {
     text-align: center;
-    color: #ccc;
-}
-
-.redes-lista {
+    color: #ffffff;
+    font-size: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 40px;
-}
-
-.redes-img {
-    width: 31px;
-    height: 31px;
-    border-radius: 5px;
-}
-
-
-/* Página Equipe */
-
-.container-footer {
-    display: flex;
-    width: 100%;
-    height: 190px;
-    background-color: #050505;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.links {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    line-height: 24px;
-}
-
-.links-lista {
-    border: 1px solid #ccc;
-    gap: 1px;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-    padding: 10px 0px;
-}
-
-.logo-footer {
-    width: 100px;
-    height: 100px;
-}
-
-.links-lista a:hover {
-    text-decoration: underline;
-    border-radius: 5px;
-}
-
-.rede-sociais {
-    /* background-color: blue; */
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.rede-titulos {
-    text-align: center;
-    color: #ccc;
+    margin-top: 50px;
+    
 }
 
 .redes-lista {
@@ -277,67 +219,11 @@ h3{
 }
 
 
-/* Página Equipe */
-
-.container-equipe-img {
-    background-image: url("/img/equipe-img-header.jpg");
-    width: 150%;
-    /* width: 1440px; */
-    height: 650px;
-    background-repeat: no-repeat;
-}
-
-.container-equipe {
-    width: 100%;
-    /* height: 1000px; */
-    background-color: #e9eaeb;
-    display: flex;
-}
-
-.equipe {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.equipe-lista {
-    width: 70%;
-    height: 440px;
-    background-color: #e0e1e1;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 15px;
-}
-
-.equipe-img {
-    width: 50%;
-}
-
-.equipe-texto {
-    padding: 20px 20px;
-    text-align: center;
-}
-
-button {
-    display: inline-block;
-    margin: 1.5em;
-    border: 0;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    color: #FFF;
-    background: rgba(255, 0, 0, 0.796);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    border-radius: 0.5em;
-    box-shadow: 3px 3px 0 3px #930;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
 
 
 
 
-button:active {
-    box-shadow: 0 0 0 0 #930, inset 4px 4px 4px #930;
-    transform: translate(6px, 6px);
-}
+
+
+
+
