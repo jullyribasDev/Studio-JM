@@ -5,9 +5,9 @@
     <nav class="container-form">
         <ul class="left-navbar">
             <li class="nav-left"><a href="#1">Sobre o Salão</a></li>
-            <li class="nav-left"><a href="/equipe" target="_blank">Nossa Equipe</a></li>
-            <li class="nav-left"><a href="#2">Serviços e agendamentos</a></li>
-            <li class="nav-left"><a href="#3">Depoimentos</a></li>
+            <li class="nav-left"><a href="#2" target="_blank">Nossa Equipe</a></li>
+            <li class="nav-left"><a href="#3">Serviços e agendamentos</a></li>
+            <li class="nav-left"><a href="#4">Depoimentos</a></li>
             <li class="nav-left"><a href="#">Contato</a></li>
         </ul>
         <div class="nav-log">
@@ -20,7 +20,7 @@
         var lastScrollTop = 300;
         navbar = document.getElementById("navbar");
         navlogo = document.getElementById("navlogo");
-        window.addEventListener("scroll", function() {
+        window.addEventListener("scroll", function () {
             var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             if (scrollTop > lastScrollTop) {
                 navbar.style.background = "#050505";

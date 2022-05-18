@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/styleEditCliente.css' />
+    <title>
+        Studio JM
+    </title>
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+        <section class="container-equipe-img"> </section>
+
+        <div class="container-edit-cliente" autocomplete="off">
+            <div class="form-design">
+                <div class="form-cliente-profile">
+                    <img src="/img/img-profile-cliente.jpg" alt="" class="img-profile">
+                    <p>Trocar Foto Perfil</p>
+                    <hr style="width:50%;text-align:left;margin-left:0;color: black; height: 5px;">
+
+                    <p>Meu Perfil</p>
+                </div>
+
+                <div class="form-cliente-dados">
+                    <form id="formulario" autocomplete="off">
+                        <fieldset>
+                            <legend>Editar Cliente</legend>
+                            <div>
+                                <label>Nome Usuário:</label><input class="username" type="text"><br>
+                                <label>Novo Nome:</label><input class="new_name" type="text"><br>
+                                <label>Novo Email:</label><input class="new_email" type="email"><br>
+                                <label>Novo Endereço:</label><input class="cep" type="text"><br>
+                                <label>Sexo:</label>
+                                <select id="sexo">
+                                    <option selected disabled value="">Selecione</option>
+                                    <option>Masculino</option>
+                                    <option>Feminino</option>
+                                </select> <br>
+                                <label>Data de Nascimento:</label><input class="data" type="date"><br>
+                                <input class="btn_submit" type="submit" value="Salvar">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <%- include('./partials/footer') %>
+</body>
+
+</html>
