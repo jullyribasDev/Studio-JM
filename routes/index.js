@@ -5,5 +5,6 @@ const indexController = require('../controllers/indexController');
 
 /* GET home page. */
 router.get('/', indexController.index);
+router.get('/login', indexController.login);
 
 module.exports = router;

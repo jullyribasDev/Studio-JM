@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+    <title>Login - Studio JM</title>
+</head>
+
+<body>
+    <header>
+        <div class="conteiner-header">
+            <img class="header-logo" src="/img/page_login_logo.svg">
+
+            <p class="header-texto">Faça Login como Cliente ou Profissional</p>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="page-login">
+            <p class="page-login-text"> Login to Studio JM</p>
+
+            <label class="page-login-text-0"><i>Username ou E-mail</i></label><br>
+            <input class="page-login-field" type="text" placeholder="Username ou E-mail">
+            <br>
+            <br>
+            <label class="page-login-text-0"><i>Password</i></label><br>
+            <input class="page-login-field" type="password" placeholder="Password"><br><br>
+
+            <input class="page-login-text-0" class="page-login-check" type="checkbox"> <label
+                class="page-login-text-0">Lembra-me</label> <label class="page-login-text-0">Esqueci a
+                senha!</label><br>
+
+            <button class="page-login-field-login" type="submit">Login</button><br>
+            <p class="page-login-text-2">ou</p>
+            <button class="page-login-field-facebook" type="submit">Login com Facebook</button>
+            <br>
+            <button class="page-login-field-google" type="submit">Login com Google</button>
+        </div>
+
+        <div class="page-login-lateral">
+
+
+        </div>
+
+
+    </div>
+
+
+    <%- include('./partials/footer') %>
+</body>
+
+</html>
