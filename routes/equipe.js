@@ -5,5 +5,6 @@ const equipeController = require('../controllers/equipeController');
 
 router.get('/', equipeController.index);
 
-module.exports = router;
+router.get('/perfil', equipeController.viewPerfil);
 
+module.exports = router;

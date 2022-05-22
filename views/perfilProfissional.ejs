@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/perfilEquipe.css">
+    <title>Perfil Profissional</title>
+</head>
+
+<body>
+    <header class="container-header" id="navbar">
+        <div class="container-logo" id="navlogo">
+            <a class="logo-link" href="/"><img src="/img/logo_dourado_transparente.png" alt="logotipo"></a>
+        </div>
+        <nav class="container-form">
+            <ul class="left-navbar">
+                <li class="nav-left"><a href="#1">Sobre o Salão</a></li>
+                <li class="nav-left"><a href="/equipe" target="_blank">Nossa Equipe</a></li>
+                <li class="nav-left"><a href="#2">Serviços e agendamentos</a></li>
+                <li class="nav-left"><a href="#3">Depoimentos</a></li>
+                <li class="nav-left"><a href="#">Contato</a></li>
+            </ul>
+            <div class="nav-log">
+                <a class="login" href="#"><img class="log-img" src="/img/login-icon-2.jpg" alt="Login">User Profissional</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-perfil">
+            <a class="content-perfil" href="">
+                <img src="/img/login-icon-2.jpg" alt="Perfil Profissional">
+                <p>Trocar Foto Perfil</p>
+            </a>
+            <a class="nav-perfil-edit" href="">Meu Perfil</a>
+        </div>
+        <form action="">
+            <div class="container-user">
+                <div class="input-user">
+                    <label for="user">Novo Usuário</label>
+                    <input type="text" name="user" id="user">
+                </div>
+                <div class="input-user">
+                    <label for="name">Novo Nome</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="input-user">
+                    <label for="email">Novo E-mail</label>
+                    <input type="text" name="name" id="email">
+                </div>
+            </div>
+            <div class="input-endereco">
+                <div class="content-endereco">
+                    <span>Novo Endereço</span>
+                </div>
+                <div class="content-input-endereco">
+                    <div class="endereco-input">
+                        <label for="cep">CEP</label>
+                        <input type="number" name="cep" id="cep">
+                    </div>
+                    <div class="endereco-input">
+                        <label for="endereco">Endereço(bairro, rua, N°)</label>
+                        <input type="text" name="endereco" id="endereco">
+                    </div>
+                </div>
+            </div>
+            <div class="content-services-atend">
+                <div class="atend-service">
+                    <label>Tipo de Atendimento</label>
+                    <label for="domiciliar">Domiciliar</label>
+                    <input type="radio" name="atendimento" id="domiciliar">
+                    <label for="salao">Salão</label>
+                    <input type="radio" name="atendimento" id="salao">
+                </div>
+                <div class="atend-service">
+                    <label for="services">Adicionar Serviços</label>
+                    <select name="servicos" id="services">
+                    <option selected disabled>Selecione</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="massagem">Massagem</option>
+                    <option value="pedicure">Pedicure</option>
+                    <option value="maquiagem">Maquiagem</option>
+                    <option value="limpeza">Limpeza de Pele</option>
+                    <option value="corte">Corte de Cabelo</option>
+                </select>
+                </div>
+                <div class="atend-service">
+                    <label for="sexo">Sexo</label>
+                    <select name="genero" id="sexo">
+                    <option disabled selected>Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="content-procedimentos">
+                <div class="procedimentos-span">
+                    <span>Adicionar fotos <br>de Procedimetos</span>
+                </div>
+                <div class="fotos-procedimentos">
+                    <img src="/img/login-icon-2.jpg" alt="fotos procedimentos">
+                    <input type="file" name="fotos" id="fotos">
+                </div>
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="container-footer ">
+        <div class="links ">
+            <img class="logo-footer " src="/img/logo_preto_dourado_transparente.png " alt=" ">
+            <ul class="links-lista ">
+                <li class="links-itens "><a href="# ">Equipe</a></li>
+                <li class="links-itens "><a href="# ">Sobre</a></li>
+                <li class="links-itens "><a href="# ">Serviços</a></li>
+                <li class="links-itens "><a href="# ">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="rede-sociais ">
+            <h3 class="rede-titulos ">Nossas redes</h3>
+            <ul class="redes-lista ">
+                <li class="redes-itens ">
+                    <a href="# "><img class="redes-img " src="/img/whatsapp.png " alt=" "></a>
+                </li>
+                <li class="redes-itens ">
+                    <a href="# "><img class="redes-img " src="/img/facebook.png " alt=" "></a>
+                </li>
+                <li class="redes-itens ">
+                    <a href="# "><img class="redes-img " src="/img/instagram.png " alt=" "></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
