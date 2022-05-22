@@ -57,26 +57,32 @@
                     <span>Novo Endereço</span>
                 </div>
                 <div class="content-input-endereco">
-                    <div class="endereco-input">
+                    <div class="endereco-input-cep">
                         <label for="cep">CEP</label>
-                        <input type="number" name="cep" id="cep">
+                        <input class="cep" type="number" name="cep" id="cep">
                     </div>
-                    <div class="endereco-input">
+                    <div class="endereco-input-endereco">
                         <label for="endereco">Endereço(bairro, rua, N°)</label>
-                        <input type="text" name="endereco" id="endereco">
+                        <input class="endereco" type="text" name="endereco" id="endereco">
                     </div>
                 </div>
             </div>
             <div class="content-services-atend">
-                <div class="atend-service">
-                    <label>Tipo de Atendimento</label>
-                    <label for="domiciliar">Domiciliar</label>
-                    <input type="radio" name="atendimento" id="domiciliar">
-                    <label for="salao">Salão</label>
-                    <input type="radio" name="atendimento" id="salao">
+                <div class="atend-service-atend">
+                    <label>Tipo de <br>Atendimento</label>
+                    <div class="atendi-input">
+                        <div class="atend">
+                            <label for="domiciliar">Domiciliar</label>
+                            <input type="radio" name="atendimento" id="domiciliar">
+                        </div>
+                        <div class="atend">
+                            <label for="salao">Salão</label>
+                            <input type="radio" name="atendimento" id="salao">
+                        </div>
+                    </div>
                 </div>
-                <div class="atend-service">
-                    <label for="services">Adicionar Serviços</label>
+                <div class="atend-service-serviço">
+                    <label for="services">Adicionar<br>Serviços</label>
                     <select name="servicos" id="services">
                     <option selected disabled>Selecione</option>
                     <option value="manicure">Manicure</option>
@@ -87,7 +93,7 @@
                     <option value="corte">Corte de Cabelo</option>
                 </select>
                 </div>
-                <div class="atend-service">
+                <div class="atend-service-genero">
                     <label for="sexo">Sexo</label>
                     <select name="genero" id="sexo">
                     <option disabled selected>Selecione</option>
@@ -107,7 +113,9 @@
                     <input type="file" name="fotos" id="fotos">
                 </div>
             </div>
-
+            <div class="button">
+                <button type="submit">SALVAR</button>
+            </div>
         </form>
     </main>
 

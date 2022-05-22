@@ -4,6 +4,9 @@ const equipeController = {
     },
     viewPerfil: (req, res) => {
         res.render('perfilProfissional')
+    },
+    editPerfil: (req, res) => {
+
     }
 }
 
