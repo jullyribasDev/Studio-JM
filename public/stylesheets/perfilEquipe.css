@@ -139,7 +139,7 @@ main {
 }
 
 .container-perfil {
-    background-color: #ccc;
+    background-color: rgb(145, 90, 18);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,7 +229,7 @@ form {
     color: #e0dede;
     font-size: 22px;
     display: flex;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 .input-user>input {
@@ -260,7 +260,7 @@ form {
     color: #e0dede;
     font-size: 22px;
     display: flex;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 .content-input-endereco {
@@ -341,7 +341,7 @@ form {
     font-weight: 600;
     color: #e0dede;
     font-size: 22px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 .atendi-input {
@@ -418,7 +418,7 @@ form {
     font-weight: 600;
     color: #e0dede;
     font-size: 22px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 .atend-service-genero>select {

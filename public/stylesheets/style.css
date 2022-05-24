@@ -9,9 +9,7 @@
 
 body,
 html {
-    width: 100%;
-    /* width: 1440px;
-    margin: 0 auto; */
+    min-width: 1560px;
     height: 100%;
 }
 
@@ -36,12 +34,13 @@ a {
     top: 0;
     width: 100%;
     background: transparent;
-    padding: 10px 100px;
+    padding: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
     transition: 0.4s;
+    padding: 10px 60px;
 }
 
 .container-logo {
@@ -66,24 +65,29 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 90px;
+    gap: 170px;
 }
 
 .container-form .left-navbar {
     display: flex;
-    gap: 40px;
     font-weight: bold;
+    gap: 50px;
 }
 
 .left-navbar .nav-left a {
     color: #ffffff;
     font-size: 14pt;
-    transition: 0.2s;
+    position: relative;
 }
 
-.left-navbar .nav-left a:hover {
-    background-color: rgb(218, 216, 216);
-    color: rgb(59, 59, 59);
+.left-navbar .nav-left a:hover::after {
+    content: " ";
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    left: 0;
+    bottom: -15px;
+    background-color: #075169;
     border-radius: 2px;
 }
 
@@ -91,7 +95,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .cadastro {
@@ -143,20 +147,11 @@ a {
     width: 100%;
     height: 95%;
     background-repeat: no-repeat;
-}
-
-.line-carossel {
-    position: absolute;
-    height: 70px;
-    width: 10px;
-    background-color: #9b6b26;
-    top: 600px;
-    left: 5%;
+    display: flex;
 }
 
 .text-carossel-h1 {
     position: absolute;
-    width: 40%;
     top: 600px;
     left: 6%;
     font-size: 25pt;
@@ -164,9 +159,17 @@ a {
     color: rgb(110, 82, 31);
 }
 
+.text-carossel-h1::before {
+    content: " ";
+    position: absolute;
+    background-color: #9b6b26;
+    width: 5px;
+    height: 70px;
+    left: -20px;
+}
+
 .text-carossel {
     position: absolute;
-    width: 40%;
     top: 640px;
     left: 6%;
     text-align: justify;
@@ -185,25 +188,17 @@ a {
 .container-sobre {
     display: flex;
     width: 100%;
-    height: 100%;
     align-items: center;
-    margin-top: 150px;
-}
-
-.conter-txt {
-    display: flex;
-    width: 100%;
-    height: 90%;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    padding: 120px 0 130px 90px;
 }
 
 .content-text {
-    width: 30%;
-    height: 70%;
     display: flex;
+    width: 40%;
     justify-content: center;
     align-items: center;
+    padding: 10px 90px;
 }
 
 .text-conter {
@@ -211,10 +206,16 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 100%;
     font-size: 17px;
-    padding: 0px 40px 0px 40px;
+}
+
+.text-conter h2::before {
+    content: " ";
+    width: 250px;
+    height: 8px;
+    background-color: #9b6b26;
+    position: absolute;
+    top: 0;
 }
 
 .text-conter h2 {
@@ -229,25 +230,15 @@ a {
     padding: 0px 0px 10px 0px;
 }
 
-.line-text {
-    width: 40%;
-    height: 10px;
-    background-color: #9b6b26;
-    position: absolute;
-    top: 0;
-    left: 40px;
-    z-index: 2;
-}
-
 .content-img {
-    width: 40%;
-    height: 70%;
+    width: 60%;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-sobre {
-    width: 100%;
-    height: 100%;
+    width: 70%;
     border-radius: 2px;
     align-self: center;
     box-shadow: 0px 0px 10px 0px rgb(163, 162, 162);
@@ -353,13 +344,11 @@ a {
 /*----Inicio Depoimentos----*/
 
 .container-depoiments {
-    width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
-    padding-top: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 30px 100px 30px;
 }
 
 .container-depoiments::before {
@@ -392,31 +381,28 @@ a {
 
 .content-depoiments {
     display: flex;
-    width: 97%;
-    height: 80;
-    gap: 20px;
     justify-content: center;
-    padding-top: 30px;
+    align-items: center;
+    padding: 20px 50px 70px 50px;
+    gap: 30px;
 }
 
 .depoiment-caixa {
     display: flex;
-    width: 29%;
-    height: 80%;
     flex-direction: column;
     align-items: center;
-    padding: 20px 30px;
-    text-align: justify;
+    text-align: center;
+    padding: 30px 20px;
     font-weight: 500;
-    gap: 10px;
+    gap: 25px;
     border-radius: 2px;
-    box-shadow: 0px 0px 2px 0px rgb(163, 162, 162);
+    box-shadow: 0px 0px 3px 0px rgb(163, 162, 162);
 }
 
 .img-depoiments {
     border: 1px solid red;
-    width: 60%;
-    height: 45%;
+    width: 180px;
+    height: 180px;
 }
 
 .img-depoiments img {
@@ -426,11 +412,10 @@ a {
 
 .container-depoiments::after {
     content: " ";
-    width: 1380px;
-    height: 2px;
     background-color: #993300;
     position: absolute;
-    z-index: 1;
+    width: 1400px;
+    height: 2px;
     bottom: 100px;
 }
 
@@ -561,4 +546,88 @@ button {
 button:active {
     box-shadow: 0 0 0 0 #930, inset 4px 4px 4px #930;
     transform: translate(6px, 6px);
+}
+
+@media(max-width:1560px) {
+    .text-carossel-h1 {
+        top: 530px;
+    }
+    .text-carossel {
+        top: 570px;
+    }
+    .container-sobre {
+        padding: 100px 0 120px 70px;
+    }
+    .content-img {
+        height: 75%;
+    }
+    .content-li-service {
+        padding: 12px 20px;
+    }
+}
+
+@media(max-width:960px) {
+    .container-header {
+        padding: 15px 60px;
+    }
+    .container-form {
+        gap: 140px;
+    }
+    .container-form .left-navbar {
+        gap: 40px;
+    }
+    .left-navbar .nav-left a {
+        font-size: 16pt;
+    }
+    .cadastro {
+        font-size: 16pt;
+    }
+    .text-carossel-h1 {
+        top: 510px;
+        font-size: 50px;
+    }
+    .text-carossel-h1::before {
+        height: 95px;
+    }
+    .text-carossel {
+        top: 565px;
+        font-size: 30px;
+    }
+    .content-text {
+        padding: 10px 50px;
+    }
+    .text-conter {
+        font-size: 23px;
+    }
+    .img-sobre {
+        width: 80%;
+    }
+    .container-service {
+        padding: 90px 0 70px 0;
+    }
+    .list-service {
+        width: 100%;
+        height: 90%;
+        gap: 10px;
+        padding: 0 20px;
+    }
+    .content-li-service {
+        font-size: 22px;
+        padding: 0 25px;
+        width: 100%;
+        height: 100%
+    }
+    .nav-agend {
+        margin: 20px 0 0 0;
+        width: 110px;
+        height: 50px;
+    }
+    .content-depoiments {
+        padding: 20px 20px 70px 20px;
+        gap: 20px;
+    }
+    .depoiment-caixa {
+        padding: 30px 30px;
+        font-size: 20px;
+    }
 }
