@@ -2,11 +2,11 @@
     <a class="container-logo" href="/">
         <img src="/img/logo_dourado_transparente.png" alt="logotipo">
     </a>
-    <div class="container-search">
-        <input type="search" name="search" id="search">
-        <img class="lupa-search" src="/img/lupapesquisa.webp" alt="Barra Pesquisa">
-    </div>
     <nav class="container-form">
+        <div class="container-search">
+            <input type="search" name="search" id="search">
+            <img class="lupa-search" src="/img/lupapesquisa.webp" alt="Barra Pesquisa">
+        </div>
         <ul class="left-navbar">
             <li class="nav-left"><a href="#1">Sobre o Salão</a></li>
             <li class="nav-left"><a href="/equipe" target="_blank">Nossa Equipe</a></li>
@@ -14,15 +14,18 @@
             <li class="nav-left"><a href="#3">Depoimentos</a></li>
             <li class="nav-left"><a href="#">Agendamentos</a></li>
         </ul>
-        <div class="nav-log">
-            <a class="cadastro" href="#">Cadastre-se</a>
-            <a class="login" href="#"><img class="log-img" src="/img/login-icon-2.jpg" alt="Login">Login</a>
-
-        </div>
-        <div class="menu-opc">
-            <img src="/img/menu-aberto.png" alt="menu de opções">
+    </nav>
+    <nav class="nav-log">
+        <a class="cadastro" href="#">Cadastre-se</a>
+        <div class="container-log">
+            <a class="login" href="#">Login</a>
+            <img class="log-img" src="/img/login-icon-2.jpg" alt="Login">
         </div>
     </nav>
+    <div class="menu-opc">
+        <img src="/img/menu-aberto.png" alt="menu de opções">
+    </div>
+
     <!-- <script>
         var lastScrollTop = 300;
         navbar = document.getElementById("navbar");

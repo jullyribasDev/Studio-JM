@@ -43,6 +43,10 @@ a {
     gap: 20px;
 }
 
+.container-nav {
+    width: 50%;
+}
+
 .container-logo {
     width: 70px;
     height: 70px;
@@ -54,8 +58,10 @@ a {
 }
 
 .container-form {
+    width: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .container-search {
@@ -559,7 +565,9 @@ button:active {
         height: 110px;
     }
     .container-search>input {
-        padding: 10px;
+        padding: 5px;
+        height: 50px;
+        font-size: 18px;
     }
     .lupa-search {
         width: 25px;
@@ -581,6 +589,212 @@ button:active {
         font-size: 32px;
         bottom: 25px;
         left: 40px;
+    }
+    .container-sobre {
+        padding: 90px 38px 80px 38px;
+        gap: 20px;
+    }
+    .content-text::before {
+        width: 170px;
+        height: 10px;
+        left: 20px;
+    }
+    .content-text {
+        gap: 15px;
+        padding: 45px 20px;
+    }
+    .content-text>h2 {
+        font-size: 35px;
+    }
+    .content-text>h4 {
+        align-self: flex-start;
+        font-size: 25px;
+    }
+    .content-text>p {
+        font-size: 22px;
+    }
+    .content-img {
+        width: 685px;
+    }
+    .container-service {
+        padding: 200px 5px 170px 5px;
+    }
+    .container-service>span {
+        padding: 60px 150px;
+        font-size: 35px;
+    }
+    .list-service {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+        gap: 15px;
+    }
+    .content-li-service {
+        width: 350px;
+        padding: 20px;
+        gap: 5px;
+        box-shadow: 0px 1px 3px black;
+    }
+    .content-li-service>p {
+        font-size: 18px;
+    }
+    .content-li-service>a {
+        padding: 12px 20px;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .container-depoiments {
+        padding: 170px 5px;
+    }
+    .container-depoiments>span::before {
+        width: 70%;
+        height: 10px;
+        left: -320px;
+        bottom: 60px;
+    }
+    .container-depoiments>span {
+        padding: 50px 120px;
+        font-size: 30px;
+    }
+    .content-depoiments {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        gap: 15px;
+    }
+    .depoiment-caixa {
+        width: 350px;
+        padding: 15px 20px;
+        gap: 15px;
+        box-shadow: 0px 1px 3px black;
+    }
+    .depoiment-caixa>p {
+        font-size: 17px;
+    }
+    .depoiment-caixa>.link-mais {
+        font-size: 16px;
+    }
+    .container-depoiments::after {
+        width: 95%;
+        height: 10px;
+        left: 20px;
+        bottom: 100px;
+    }
+}
+
+@media(min-width:992px) {
+    .container-header {
+        padding: 20px;
+        gap: 15px;
+    }
+    .container-logo {
+        width: 120px;
+        height: 120px;
+    }
+    .container-search {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .container-search>input {
+        width: 100%;
+        padding: 6px;
+    }
+    .lupa-search {
+        width: 25px;
+        height: 25px;
+    }
+    .menu-opc {
+        display: none;
+    }
+    .container-form {
+        width: 70%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .container-form .left-navbar {
+        display: flex;
+        gap: 25px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .nav-left {
+        position: relative;
+        transition: all 0.3s;
+    }
+    .nav-left:hover::after {
+        cursor: pointer;
+        content: " ";
+        position: absolute;
+        border-radius: 5px;
+        width: 70px;
+        height: 5px;
+        left: 0;
+        bottom: -10px;
+        background-color: rgba(0, 0, 0, 0.651);
+    }
+    .login {
+        letter-spacing: 1px;
+    }
+    .cadastro {
+        font-weight: 500;
+        position: relative;
+        transition: 0.3s;
+    }
+    .cadastro:hover::after {
+        cursor: pointer;
+        content: " ";
+        position: absolute;
+        border-radius: 5px;
+        width: 70px;
+        height: 5px;
+        left: 0;
+        bottom: -10px;
+        background-color: rgba(0, 0, 0, 0.651);
+    }
+    .container-log {
+        background-color: #044357;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        padding: 15px 50px 15px 10px;
+        border-radius: 5px;
+        transition: all 0.3s;
+    }
+    .container-log:hover {
+        background-color: #072933;
+    }
+    .nav-log {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        font-weight: 600;
+        font-size: 20px;
+        gap: 10px;
+        margin-left: 20px;
+    }
+    .log-img {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 5px;
+    }
+    /*fim header*/
+    .container-carossel>img {
+        height: 570px;
     }
     .container-sobre {
         padding: 90px 38px 80px 38px;
