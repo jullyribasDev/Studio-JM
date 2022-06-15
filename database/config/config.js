@@ -2,7 +2,7 @@ module.exports = {
     "development": {
         "username": "root",
         "password": '',
-        "database": "studio_jm;",
+        "database": "studiojm",
         "host": "127.0.0.1",
         "dialect": "mysql"
     }
