@@ -10,7 +10,7 @@
 body,
 html {
     min-width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 ul,
@@ -116,7 +116,7 @@ a {
 
 .container-carossel>img {
     width: 100%;
-    height: 175px;
+    height: 30vh;
 }
 
 .text-principal::before {
@@ -694,8 +694,8 @@ button:active {
         gap: 15px;
     }
     .container-logo {
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 130px;
     }
     .container-search {
         width: 100%;
@@ -725,7 +725,7 @@ button:active {
     }
     .container-form .left-navbar {
         display: flex;
-        gap: 25px;
+        gap: 23px;
         font-size: 20px;
         font-weight: 600;
     }
@@ -794,102 +794,217 @@ button:active {
     }
     /*fim header*/
     .container-carossel>img {
-        height: 570px;
+        height: 580px;
     }
     .container-sobre {
-        padding: 90px 38px 80px 38px;
+        padding: 100px 70px 80px 70px;
         gap: 20px;
     }
     .content-text::before {
-        width: 170px;
-        height: 10px;
-        left: 20px;
+        left: 40px;
     }
     .content-text {
         gap: 15px;
-        padding: 45px 20px;
-    }
-    .content-text>h2 {
-        font-size: 35px;
-    }
-    .content-text>h4 {
-        align-self: flex-start;
-        font-size: 25px;
-    }
-    .content-text>p {
-        font-size: 22px;
+        padding: 45px 40px;
     }
     .content-img {
-        width: 685px;
-    }
-    .container-service {
-        padding: 200px 5px 170px 5px;
-    }
-    .container-service>span {
-        padding: 60px 150px;
-        font-size: 35px;
+        width: 700px;
     }
     .list-service {
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 0;
-        gap: 15px;
+        justify-content: flex-start;
+        gap: 10px;
     }
     .content-li-service {
-        width: 350px;
-        padding: 20px;
+        width: 318px;
         gap: 5px;
-        box-shadow: 0px 1px 3px black;
-    }
-    .content-li-service>p {
-        font-size: 18px;
-    }
-    .content-li-service>a {
-        padding: 12px 20px;
-        margin-top: 10px;
-        font-size: 18px;
-    }
-    .container-depoiments {
-        padding: 170px 5px;
     }
     .container-depoiments>span::before {
-        width: 70%;
-        height: 10px;
-        left: -320px;
-        bottom: 60px;
-    }
-    .container-depoiments>span {
-        padding: 50px 120px;
-        font-size: 30px;
+        width: 535px;
+        left: -550px;
     }
     .content-depoiments {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        width: 100%;
-        gap: 15px;
+        justify-content: flex-start;
+        padding: 0 0 0 5px;
+        gap: 10px;
     }
     .depoiment-caixa {
-        width: 350px;
-        padding: 15px 20px;
+        width: 315px;
+        padding: 10px 10px;
         gap: 15px;
         box-shadow: 0px 1px 3px black;
     }
-    .depoiment-caixa>p {
-        font-size: 17px;
+    .img-depoiments {
+        width: 190px;
+        height: 160px;
+        display: flex;
     }
-    .depoiment-caixa>.link-mais {
-        font-size: 16px;
+    .img-depoiments>img {
+        width: 100%;
     }
-    .container-depoiments::after {
-        width: 95%;
-        height: 10px;
-        left: 20px;
-        bottom: 100px;
+}
+
+@media(min-width:1200px) {
+    .container-header {
+        padding: 30px 25px;
+    }
+    .container-logo {
+        width: 140px;
+        height: 140px;
+    }
+    .lupa-search {
+        width: 30px;
+        height: 30px;
+    }
+    .container-form {
+        gap: 20px;
+    }
+    .container-form .left-navbar {
+        gap: 42px;
+        font-size: 22px;
+    }
+    .nav-log {
+        gap: 15px;
+        font-size: 22px;
+    }
+    .container-log {
+        padding: 18px 60px 18px 15px;
+    }
+    .log-img {
+        width: 32px;
+        height: 32px;
+        right: 8px;
+    }
+    /*fim header*/
+    .container-carossel {}
+    .container-carossel>img {}
+    .container-sobre {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 15px;
+        gap: 15px;
+    }
+    .content-text::before {
+        left: 30px;
+    }
+    .content-text {
+        width: 45%;
+        gap: 15px;
+        padding: 50px 25px 45px 30px;
+    }
+    .content-img {
+        width: 55%;
+    }
+    .list-service {
+        gap: 20px;
+        padding: 0 0 0 15px;
+    }
+    .content-li-service {
+        padding: 40px 25px;
+        width: 32%;
+    }
+    .container-depoiments>span::before {
+        width: 730px;
+        left: -750px;
+    }
+    .content-depoiments {
+        padding: 0 0 0 5px;
+        gap: 20px;
+    }
+    .depoiment-caixa {
+        width: 32%;
+        padding: 20px 15px;
+    }
+    .img-depoiments {
+        width: 210px;
+        height: 180px;
+    }
+}
+
+@media(min-width:1920px) {
+    .container-header {
+        padding: 5px;
+        box-shadow: 0px 1px 2px black;
+        justify-content: center;
+        gap: 2px
+    }
+    .container-logo {
+        width: 200px;
+        height: 200px;
+    }
+    .container-search {
+        justify-content: center;
+    }
+    .container-search>input {
+        width: 80%;
+        padding: 6px;
+    }
+    .lupa-search {
+        width: 30px;
+        height: 30px;
+        right: 140px;
+    }
+    .container-form {
+        gap: 30px;
+    }
+    .container-form .left-navbar {
+        gap: 70px;
+        font-size: 22px;
+    }
+    .nav-log {
+        font-size: 22px;
+    }
+    .container-log {
+        gap: 30px;
+        padding: 18px 60px 18px 15px;
+    }
+    .log-img {
+        width: 32px;
+        height: 32px;
+        right: 8px;
+    }
+    /*fim header*/
+    .container-carossel>img {
+        height: 680px;
+    }
+    .container-sobre {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 80px 15px;
+        gap: 15px;
+    }
+    .content-text::before {
+        left: 30px;
+    }
+    .content-text {
+        width: 45%;
+        gap: 15px;
+        padding: 50px 25px 45px 30px;
+    }
+    .content-img {
+        width: 55%;
+    }
+    .list-service {
+        gap: 20px;
+        padding: 0 0 0 15px;
+    }
+    .content-li-service {
+        padding: 40px 25px;
+        width: 32%;
+    }
+    .container-depoiments>span::before {
+        width: 730px;
+        left: -750px;
+    }
+    .content-depoiments {
+        padding: 0 0 0 5px;
+        gap: 20px;
+    }
+    .depoiment-caixa {
+        width: 32%;
+        padding: 20px 15px;
+    }
+    .img-depoiments {
+        width: 210px;
+        height: 180px;
     }
 }
