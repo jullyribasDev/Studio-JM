@@ -54,6 +54,44 @@ const usuarioController = {
 
         return res.json(usuario);
     },
+    update: async(req, res) => {
+        const { id } = req.params;
+        const {
+            nome,
+            userName,
+            email,
+            endereco,
+            complement,
+            cidade,
+            bairro,
+            cep,
+            dataNascimento,
+            genero,
+            senha,
+            isProfissional
+        } = req.body;
+
+        const atualizarUser = await database.Usuario.update({
+            nome,
+            userName,
+            email,
+            endereco,
+            complement,
+            cidade,
+            bairro,
+            cep,
+            dataNascimento,
+            genero,
+            senha,
+            isProfissional
+        }, {
+            where: {
+                id_user: id
+            }
+        });
+
+        return res.json(atualizarUser);
+    },
     destroy: async(req, res) => {
         const { id } = req.params;
         await database.Usuario.destroy({
