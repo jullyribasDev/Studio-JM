@@ -6,38 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/perfilEquipe.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
     <title>Perfil Profissional</title>
 </head>
 
 <body>
-    <header class="container-header" id="navbar">
-        <div class="container-logo" id="navlogo">
-            <a class="logo-link" href="/"><img src="/img/logo_dourado_transparente.png" alt="logotipo"></a>
+    <header class="container-header-profissional" id="navbar">
+        <div class="container-logo-profissional" id="navlogo">
+            <img src="/img/logo_dourado_transparente.png" alt="logotipo">
         </div>
-        <nav class="container-form">
-            <ul class="left-navbar">
+        <nav class="container-form-profissional">
+            <span>Editar Perfil</span>
+            <ul class="left-navbar-profissional">
                 <li class="nav-left"><a href="#1">Sobre o Salão</a></li>
                 <li class="nav-left"><a href="/equipe" target="_blank">Nossa Equipe</a></li>
-                <li class="nav-left"><a href="#2">Serviços e agendamentos</a></li>
+                <li class="nav-left"><a href="#2">Serviços</a></li>
                 <li class="nav-left"><a href="#3">Depoimentos</a></li>
-                <li class="nav-left"><a href="#">Contato</a></li>
+                <li class="nav-left"><a href="#">Agendamentos</a></li>
             </ul>
-            <div class="nav-log">
-                <a class="login" href="#"><img class="log-img" src="/img/login-icon-2.jpg" alt="Login">User Profissional</a>
-
+            <a class="nav-log-profissional" href="#">
+                <img class="log-img" src="/img/login-icon-2.jpg" alt="Login">User Profissional
+            </a>
+            <div class="menu-opcoes-profissional">
+                <img src="/img/menu-aberto.png" alt="menu de opções">
             </div>
         </nav>
     </header>
 
-    <main>
-        <div class="container-perfil">
-            <a class="content-perfil" href="">
+    <main class="main-profissional">
+        <div class="container-perfil-profissional">
+            <a class="content-perfil-profissional" href="">
                 <img src="/img/login-icon-2.jpg" alt="Perfil Profissional">
-                <p>Trocar Foto Perfil</p>
+                <p>Trocar Foto</p>
             </a>
-            <a class="nav-perfil-edit" href="">Meu Perfil</a>
+            <div class="nav-perfil-edit">
+                <a href="">Meu Perfil</a>
+            </div>
+
         </div>
-        <form action="">
+        <form class="fomr-profissonal" action="#">
             <div class="container-user">
                 <div class="input-user">
                     <label for="user">Novo Usuário</label>
@@ -53,9 +60,7 @@
                 </div>
             </div>
             <div class="input-endereco">
-                <div class="content-endereco">
-                    <span>Novo Endereço</span>
-                </div>
+                <span>Novo Endereço</span>
                 <div class="content-input-endereco">
                     <div class="endereco-input-cep">
                         <label for="cep">CEP</label>
@@ -69,7 +74,7 @@
             </div>
             <div class="content-services-atend">
                 <div class="atend-service-atend">
-                    <label>Tipo de <br>Atendimento</label>
+                    <span>Tipo de Atendimento</span>
                     <div class="atendi-input">
                         <div class="atend">
                             <label for="domiciliar">Domiciliar</label>
@@ -82,7 +87,7 @@
                     </div>
                 </div>
                 <div class="atend-service-serviço">
-                    <label for="services">Adicionar<br>Serviços</label>
+                    <span for="services">Adicionar Serviços</span>
                     <select name="servicos" id="services">
                     <option selected disabled>Selecione</option>
                     <option value="manicure">Manicure</option>
@@ -94,7 +99,7 @@
                 </select>
                 </div>
                 <div class="atend-service-genero">
-                    <label for="sexo">Sexo</label>
+                    <span for="sexo">Sexo</span>
                     <select name="genero" id="sexo">
                     <option disabled selected>Selecione</option>
                     <option value="masculino">Masculino</option>
@@ -105,12 +110,11 @@
             </div>
 
             <div class="content-procedimentos">
-                <div class="procedimentos-span">
-                    <span>Adicionar fotos <br>de Procedimetos</span>
-                </div>
+                <span>Adicionar fotos de Procedimetos</span>
                 <div class="fotos-procedimentos">
                     <img src="/img/login-icon-2.jpg" alt="fotos procedimentos">
-                    <input type="file" name="fotos" id="fotos">
+                    <label for="fotos">Adicionar Fotos</label>
+                    <input type="file" name="fotos" id="fotos" multiple>
                 </div>
             </div>
             <div class="button">
@@ -118,33 +122,7 @@
             </div>
         </form>
     </main>
-
-    <footer class="container-footer ">
-        <div class="links ">
-            <img class="logo-footer " src="/img/logo_preto_dourado_transparente.png " alt=" ">
-            <ul class="links-lista ">
-                <li class="links-itens "><a href="# ">Equipe</a></li>
-                <li class="links-itens "><a href="# ">Sobre</a></li>
-                <li class="links-itens "><a href="# ">Serviços</a></li>
-                <li class="links-itens "><a href="# ">Contato</a></li>
-            </ul>
-        </div>
-
-        <div class="rede-sociais ">
-            <h3 class="rede-titulos ">Nossas redes</h3>
-            <ul class="redes-lista ">
-                <li class="redes-itens ">
-                    <a href="# "><img class="redes-img " src="/img/whatsapp.png " alt=" "></a>
-                </li>
-                <li class="redes-itens ">
-                    <a href="# "><img class="redes-img " src="/img/facebook.png " alt=" "></a>
-                </li>
-                <li class="redes-itens ">
-                    <a href="# "><img class="redes-img " src="/img/instagram.png " alt=" "></a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+    <%- include('./partials/footer') %>
 </body>
 
 </html>
