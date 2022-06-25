@@ -1,11 +1,11 @@
 const databaseS = require('../database/models');
 
 const servicoService = {
-    allServicos: async() => {
-        const allServices = await databaseS.Servico.findAndCountAll();
+    // allServicos: async() => {
+    //     const allServices = await databaseS.Servico.findAndCountAll();
 
-        return allServices;
-    },
+    //     return allServices;
+    // },
     createService: async(procedimento, description) => {
         const newService = await databaseS.Servico.create({
             procedimento,

@@ -35,12 +35,13 @@
                 <img src="/img/login-icon-2.jpg" alt="Imagem de Serviço">
                 <a href="">Adicionar Foto de Serviço</a>
             </div>
-            <form action="">
+            <form action="/servicos/addService" method="POST">
                 <label for="procedimento">Nome Procedimento</label>
                 <input type="text" name="procedimento" id="procedimento" placeholder="Digite o Nome do Serviço">
 
                 <label for="description">Descrição do Procedimento</label>
-                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Diga algo sobre o procedimento"></textarea>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </main>
