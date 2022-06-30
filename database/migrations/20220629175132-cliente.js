@@ -1,8 +1,8 @@
 'use strict';
 module.exports = {
     async up(queryInterface, Sequelize) {
-        await queryInterface.createTable('usuario', {
-            id_user: {
+        await queryInterface.createTable('cliente', {
+            id_cliente: {
                 type: Sequelize.INTEGER,
                 primaryKey: true,
                 autoIncrement: true,
@@ -24,7 +24,13 @@ module.exports = {
             dataNascimento: Sequelize.DATE,
             genero: Sequelize.STRING,
             senha: Sequelize.STRING,
-            isProfissional: Sequelize.STRING,
+            fk_profissional: {
+                type: Sequelize.INTEGER,
+                references:{
+                    model: "profissional",
+                    key: "id_profissional"
+                }
+            },
             createdAt: {
                 type: Sequelize.DATE,
                 allowNull: false
@@ -37,6 +43,6 @@ module.exports = {
     },
 
     async down(queryInterface, Sequelize) {
-        await queryInterface.dropTable('usuario');
+        await queryInterface.dropTable('cliente');
     }
 };

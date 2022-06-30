@@ -1,10 +1,8 @@
-const servicoService = require('../service/servicoService');
 const databaseS = require('../database/models');
 
-
 const serviceController = {
-    allService: async(req, res) => {
-        const allServices = await databaseS.Servico.findAll();
+    allService: async (req, res) => {
+        const allServices = await databaseS.Servico.findAndCountAll();
 
         return res.render('services', { allServices });
 
@@ -12,17 +10,17 @@ const serviceController = {
     viewAddService: (req, res) => {
         res.render('adicionarService')
     },
-    createServico: async(req, res) => {
+    createServico: async (req, res) => {
         const { procedimento, description } = req.body;
 
-        await servicoService.createService(
+        await databaseS.Servico.create({
             procedimento,
             description
-        );
+        });
 
         return res.redirect("/servicos");
     },
-    update: async(req, res) => {
+    update: async (req, res) => {
         const { id } = req.params;
         const {
             procedimento,
@@ -39,7 +37,7 @@ const serviceController = {
         });
         return res.json(updateService);
     },
-    destroy: async(req, res) => {
+    destroy: async (req, res) => {
         const { id } = req.params;
 
         await databaseS.Servico.destroy({

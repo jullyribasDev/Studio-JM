@@ -1,17 +1,16 @@
-const usuarioService = require("../service/usuariosService");
 const database = require('../database/models');
 const sequelize = require('sequelize');
 const op = sequelize.Op;
 
-const usuarioController = {
-    allUsuarios: async(req, res) => {
-        const allUsers = await usuarioService.allUsuario();
+const clienteController = {
+    allClientes: async (req, res) => {
+        const allClientes = await database.Cliente.findAndCountAll();
 
-        return res.json(allUsers);
+        return res.json(allClientes);
     },
-    oneUsuario: async(req, res) => {
+    oneCliente: async (req, res) => {
         const { key } = req.query;
-        const oneUser = await database.Usuario.findAll({
+        const oneCliente = await database.Cliente.findOne({
             where: {
                 nome: {
                     [op.like]: `%${key}%`
@@ -19,9 +18,9 @@ const usuarioController = {
             }
         });
 
-        return res.json(oneUser);
+        return res.json(oneCliente);
     },
-    create: async(req, res) => {
+    create: async (req, res) => {
         const {
             nome,
             userName,
@@ -33,11 +32,10 @@ const usuarioController = {
             cep,
             dataNascimento,
             genero,
-            senha,
-            isProfissional
+            senha
         } = req.body;
 
-        const usuario = await usuarioService.createUser(
+        const Cliente = await database.Cliente.create({
             nome,
             userName,
             email,
@@ -49,12 +47,11 @@ const usuarioController = {
             dataNascimento,
             genero,
             senha,
-            isProfissional
-        );
+        });
 
-        return res.json(usuario);
+        return res.json(Cliente);
     },
-    update: async(req, res) => {
+    update: async (req, res) => {
         const { id } = req.params;
         const {
             nome,
@@ -67,11 +64,10 @@ const usuarioController = {
             cep,
             dataNascimento,
             genero,
-            senha,
-            isProfissional
+            senha
         } = req.body;
 
-        const atualizarUser = await database.Usuario.update({
+        const atualizarCliente = await database.Cliente.update({
             nome,
             userName,
             email,
@@ -83,25 +79,24 @@ const usuarioController = {
             dataNascimento,
             genero,
             senha,
-            isProfissional
         }, {
             where: {
-                id_user: id
+                id_cliente: id
             }
         });
 
-        return res.json(atualizarUser);
+        return res.json(atualizarCliente);
     },
-    destroy: async(req, res) => {
+    destroy: async (req, res) => {
         const { id } = req.params;
-        await database.Usuario.destroy({
+        await database.Cliente.destroy({
             where: {
-                id_user: id
+                id_cliente: id
             }
         });
 
-        return res.redirect("/users");
+        return res.send("Deletado com Sucesso!");
     }
 };
 
-module.exports = usuarioController;
+module.exports = clienteController;

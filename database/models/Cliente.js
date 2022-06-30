@@ -1,6 +1,6 @@
 module.exports = (Sequelize, DataType) => {
-    const Usuario = Sequelize.define('Usuario', {
-        id_user: {
+    const Cliente = Sequelize.define('Cliente', {
+        id_cliente: {
             type: DataType.INTEGER,
             primaryKey: true,
             autoIncrement: true,
@@ -22,11 +22,22 @@ module.exports = (Sequelize, DataType) => {
         dataNascimento: DataType.DATE,
         genero: DataType.STRING,
         senha: DataType.STRING,
-        isProfissional: DataType.STRING
+        fk_profissional: DataType.INTEGER,
     }, {
-        tableName: 'usuario',
+        tableName: 'cliente',
         timestamps: true
     });
 
-    return Usuario;
+    Cliente.associate = (models) => {
+        Cliente.belongsTo(models.Profissional, {
+            as: "profissional",
+            foreignKey: "fk_profissional"
+        });
+        Cliente.hasMany(models.Agendamento,{
+            as:"agendamento",
+            foreignKey: "fk_cliente"
+        });
+    }
+
+    return Cliente;
 };

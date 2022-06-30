@@ -8,9 +8,16 @@ module.exports = {
                 primaryKey: true,
                 autoIncrement: true,
             },
-            localName: {
+            localService: {
                 type: Sequelize.STRING,
                 allowNull: false
+            },
+            fk_profissional: {
+                type: Sequelize.INTEGER,
+                references:{
+                    model: "profissional",
+                    key: "id_profissional"
+                }
             },
             createdAt: {
                 type: Sequelize.DATE,

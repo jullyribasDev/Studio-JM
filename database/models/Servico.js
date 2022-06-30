@@ -18,5 +18,12 @@ module.exports = (Sequelize, DataType) => {
         timestamps: true
     });
 
+    Servico.associate = (models) => {
+        Servico.hasMany(models.Agendamento, {
+            as: "agendamento",
+            foreignKey: "fk_service"
+        })
+    };
+
     return Servico;
 };

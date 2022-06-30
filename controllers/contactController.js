@@ -35,7 +35,6 @@ const contactController = {
     },
     destroy: async(req, res) => {
         const { id } = req.params;
-        const { name } = req.body;
 
         await database.Contato.destroy({
             where: {
