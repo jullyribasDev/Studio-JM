@@ -1,0 +1,247 @@
+.container-serviceAll {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4C4C4;
+    margin-top: 20%;
+}
+
+.content-services-cabecalho {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 10px 5px;
+    gap: 10px;
+    box-shadow: 0 1px 2px black;
+}
+
+.content-services-cabecalho>span {
+    width: 100%;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+.content-services-cabecalho>.addService {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: #C16906;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.content-services-main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    background-color: white;
+    padding: 8px;
+    gap: 10px;
+    box-shadow: 0 1px 2px black;
+    border-radius: 2px;
+}
+
+.img-card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.img-card>p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.img-card>img {
+    width: 100%
+}
+
+.text-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.text-card>p {
+    text-align: center;
+}
+
+.text-card>a {
+    background-color: #C16906;
+    padding: 5px;
+}
+@media(min-width:480px) {
+    /*main*/
+    .cards-service {
+        width: 55%;
+        padding: 10px;
+        gap: 10px;
+    }
+    .img-card {
+        width: 85%;
+    }
+    .text-card {
+        gap: 15px;
+    }
+    .text-card>a {
+        padding: 8px;
+    }
+    
+}
+
+@media(min-width:768px) {
+    /*main*/
+    .container-serviceAll {
+        margin-top: 15%;
+    }
+    .content-services-cabecalho {
+        padding: 15px 5px;
+        gap: 15px;
+    }
+    .content-services-cabecalho>span {
+        font-size: 25px;
+    }
+    .content-services-cabecalho>.addService {
+        width: 30%;
+        font-size: 20px;
+        padding: 7px 5px;
+    }
+    .content-services-main {
+        padding: 15px 10px;
+    }
+    .cards-service {
+        width: 45%;
+        padding: 10px;
+        gap: 10px;
+    }
+    .img-card {
+        width: 85%;
+    }
+    .img-card>p {
+        font-size: 22px;
+    }
+    .text-card {
+        gap: 15px;
+    }
+    .text-card>p {
+        font-size: 19px;
+    }
+    .text-card>a {
+        padding: 12px 15px;
+    }
+}
+
+@media(min-width:992px) {
+    /*main*/
+    .cards-service {
+        width: 35%;
+        padding: 10px;
+        gap: 10px;
+    }
+}
+
+@media(min-width:1200px) {
+    /*main*/
+    .container-serviceAll {
+        margin-top: 12%;
+    }
+    .content-services-cabecalho {
+        padding: 20px 5px;
+        gap: 15px;
+    }
+    .content-services-cabecalho>span {
+        font-size: 29px;
+    }
+    .content-services-cabecalho>.addService {
+        width: 25%;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 10px 5px;
+    }
+    .cards-service {
+        width: 35%;
+        padding: 25px 15px;
+        gap: 15px;
+    }
+    .img-card {
+        width: 80%;
+    }
+    .img-card>p {
+        font-size: 29px;
+    }
+    .text-card {
+        gap: 20px;
+    }
+    .text-card>p {
+        font-size: 24px;
+    }
+    .text-card>a {
+        padding: 15px 25px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+
+@media(min-width:1600px) {
+    /*main*/
+    .container-serviceAll {
+        margin-top: 10%;
+    }
+    .content-services-cabecalho {
+        padding: 25px 20px;
+        gap: 20px;
+    }
+    .content-services-cabecalho>span {
+        font-size: 39px;
+    }
+    .content-services-cabecalho>.addService {
+        font-size: 30px;
+        padding: 12px 5px;
+    }
+    .cards-service {
+        width: 39%;
+        padding: 30px 25px;
+        gap: 30px;
+    }
+    .img-card {
+        width: 85%;
+    }
+    .img-card>p {
+        font-size: 42px;
+    }
+    .text-card {
+        gap: 25px;
+    }
+    .text-card>p {
+        font-size: 32px;
+    }
+    .text-card>a {
+        padding: 17px 28px;
+        font-size: 28px;
+    }
+}
