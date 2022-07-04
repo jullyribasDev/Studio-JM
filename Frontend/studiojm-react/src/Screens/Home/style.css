@@ -6,13 +6,6 @@
     border: 0;
     font-family: 'Roboto', sans-serif;
 }
-
-body,
-html {
-    min-width: 100%;
-    height: 100vh;
-}
-
 ul,
 ol {
     list-style: none;
@@ -29,15 +22,15 @@ a {
 input {
     outline: 0;
 }
+select{
+    outline: 0;
+}
 
 
 /*----HEADER----*/
 
 .container-header {
     width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -359,6 +352,7 @@ input {
     width: 100%;
     background-color: #524646;
     align-items: center;
+    flex-grow: 1;
 }
 
 .links {
@@ -933,10 +927,7 @@ input {
 
 @media(min-width:1600px) {
     .container-header {
-        padding: 0 15px 0 0;
-        position: fixed;
-        top: 0;
-        z-index: 1;
+        padding: 0 15px 0 0; 
     }
     .container-logo {
         width: 10%;

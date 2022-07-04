@@ -18,8 +18,8 @@ function Header() {
                     </div>
                     <ul className="left-navbar">
                         <li className="nav-left"><a href="#1">Sobre o Salão</a></li>
-                        <li className="nav-left"><a href="/equipe" target="_blank">Nossa Equipe</a></li>
-                        <li className="nav-left"><a href="/servicos">Serviços</a></li>
+                        <li className="nav-left"><a href="/updateProfissional">Nossa Equipe</a></li>
+                        <li className="nav-left"><a href="/servico">Serviços</a></li>
                         <li className="nav-left"><a href="#3">Depoimentos</a></li>
                         <li className="nav-left"><a href="#0">Agendamentos</a></li>
                     </ul>

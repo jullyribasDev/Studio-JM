@@ -41,7 +41,7 @@ function Home() {
             </section>
             <section id="3" className="container-depoiments">
                 <span className="span-depoiments">Comentários</span>
-                <articlce className="content-depoiments">
+                <div className="content-depoiments">
                     <div className="depoiment-caixa">
                         <h1>Modelo 1</h1>
                         <a className="img-depoiments" href="#3"><img src="/img/modelo1.jpg" alt="depoimento um"/></a>
@@ -49,7 +49,7 @@ function Home() {
                             nobis? Sed reiciendis incidunt quos repellendus.</p>
                         <a className="link-mais" href="#0">ver mais...</a>
                     </div>
-                </articlce>
+                </div>
             </section>
             <Footer />
         </>
