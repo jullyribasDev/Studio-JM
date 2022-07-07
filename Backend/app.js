@@ -10,6 +10,7 @@ var clienteRouter = require('./routes/cliente');
 var serviceRouter = require('./routes/service');
 var contactRouter = require('./routes/contact');
 var profissionalRouter = require('./routes/profissional');
+var agendamentoRouter = require('./routes/agendamento');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/cliente', clienteRouter);
 app.use('/servicos', serviceRouter);
 app.use('/contato', contactRouter);
 app.use('/profissional', profissionalRouter);
+app.use('/agendamento', agendamentoRouter);
 
 
 // catch 404 and forward to error handler

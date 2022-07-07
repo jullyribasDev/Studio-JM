@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,400&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400&family=Ropa+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.equipe {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 12px 8px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.equipe-lista {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgba(196, 196, 196, 0.2);
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+.equipe-lista:hover{
+    box-shadow: 0px 2px 5px rgb(129, 129, 129);
+}
+
+.equipe-lista>img {
+    width: 80%;
+}
+.equipe-lista>span{
+    font-weight: bold;
+}
+.equipe-lista>p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.equipe-lista>button {
+    background-color: #C16906;
+    color: white;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0px 1px 2px #C16906;
+    padding: 5px 10px;
+    transition: all 0.3s;
+}
+.equipe-lista>button:hover{
+    cursor: pointer;
+    background-color: #a55d0a;
+    box-shadow: 0px 2px 5px #C16906;
+}
+@media(min-width:480px){
+    .equipe-lista {
+        width: 45%;
+    }
+    .equipe-lista>button {
+        font-size: 12px;
+    }
+}
+@media(min-width:768px){
+    .equipe-lista {
+        width: 40%;
+        padding: 25px 8px;
+        gap: 15px;
+    }
+    .equipe-lista>img {
+        width: 70%;
+    }
+    .equipe-lista>span{
+        font-size: 18px;
+    }
+    .equipe-lista>p {
+        font-size: 18px;
+    }
+    
+    .equipe-lista>button {
+        font-size: 18px;
+        padding: 8px 10px;
+    }
+}
+@media(min-width:992px){
+    .equipe-lista {
+        width: 30%;
+        padding: 35px 25px 25px 25px;
+        gap: 15px;
+    }
+    .equipe-lista>img {
+        width: 75%;
+    }
+    
+    .equipe-lista>p {
+        font-size: 19px;
+    }
+    
+    .equipe-lista>button {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+}
+@media(min-width:1200px){
+    .equipe-lista {
+        width: 25%;
+        padding: 30px 15px 25px 15px;
+        gap: 12px;
+    }
+    .equipe-lista>img {
+        width: 78%;
+    }
+    
+    .equipe-lista>p {
+        font-size: 17px;
+    }
+    
+    .equipe-lista>button {
+        padding: 5px 12px;
+    }
+}
+@media(min-width:1600px){
+    .equipe-lista {
+        width: 20%;
+        padding: 30px 10px 20px 10px;
+        gap: 15px;
+    }
+    .equipe-lista>img {
+        width: 65%;
+    }
+    .equipe-lista>p {
+        font-size: 20px;
+    }
+    .equipe-lista>button {
+        padding: 10px;
+    }
+}
+
+
+

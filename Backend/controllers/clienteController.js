@@ -80,6 +80,7 @@ const clienteController = {
             genero,
             senha
         } = req.body;
+        const hash = await bcrypt.hash(senha, 10);
 
         const atualizarCliente = await database.Cliente.update({
             nome,
@@ -92,7 +93,7 @@ const clienteController = {
             cep,
             dataNascimento,
             genero,
-            senha,
+            senha: hash
         }, {
             where: {
                 id_cliente: id

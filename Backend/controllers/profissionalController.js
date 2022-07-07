@@ -1,8 +1,9 @@
 const database = require("../database/models")
+const bcrypt = require('bcrypt');
 
 const profissionalController = {
     index: async (req, res) => {
-        const allProfissionais = await database.Profissional.findAndCountAll();
+        const allProfissionais = await database.Profissional.findAll();
 
         return res.json(allProfissionais)
     },
@@ -37,10 +38,9 @@ const profissionalController = {
             cep,
             dataNascimento,
             genero,
-            services,
-            localService,
             senha
         } = req.body;
+        const hash = await bcrypt.hash(senha, 10);
 
         const newProfissional = await database.Profissional.create({
             nome,
@@ -53,9 +53,7 @@ const profissionalController = {
             cep,
             dataNascimento,
             genero,
-            services,
-            localService,
-            senha
+            senha: hash
         });
 
         return res.json(newProfissional)
@@ -77,6 +75,7 @@ const profissionalController = {
             localService,
             senha
         } = req.body;
+        const hash = await bcrypt.hash(senha, 10);
         await database.Profissional.update({
             nome,
             userName,
@@ -90,7 +89,7 @@ const profissionalController = {
             genero,
             services,
             localService,
-            senha
+            senha: hash
         }, {
             where: {
                 id_profissional: id

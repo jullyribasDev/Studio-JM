@@ -12,11 +12,11 @@ function CardServico() {
             setServicos(services.data);
         }
         loadServices();
-    })
+    }, [])
     return (
         <>
-            {servicos.map((servico) => (
-                <div className="cards-service">
+            {servicos.map((servico, index) => (
+                <div className="cards-service" key={index}>
                     <div className="img-card">
                         <img src={manicure} alt="Serviço Massagem" />
                         <p>{servico.procedimento}</p>
