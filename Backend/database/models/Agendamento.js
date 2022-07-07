@@ -4,10 +4,7 @@ module.exports = (Sequelize, DataType) => {
             type: DataType.INTEGER,
             primaryKey: true,
             autoIncrement: true,
-        },
-        fk_profissional: DataType.INTEGER,
-        fk_cliente: DataType.INTEGER,
-        fk_service: DataType.INTEGER,
+        }
     }, {
         tableName: 'agendamento',
         timestamps: true

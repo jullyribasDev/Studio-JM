@@ -4,9 +4,8 @@ var router = express.Router();
 const serviceController = require("../controllers/serviceController");
 const localServiceController = require('../controllers/locServiceController');
 
-router.get('/', serviceController.allService);
+router.get('/all', serviceController.allService);
 
-router.get('/adicionar', serviceController.viewAddService);
 router.post('/adicionar', serviceController.createServico);
 router.put('/atualizar/:id', serviceController.update);
 router.delete('/deletar/:id', serviceController.destroy);

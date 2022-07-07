@@ -2,13 +2,9 @@ const databaseS = require('../database/models');
 
 const serviceController = {
     allService: async (req, res) => {
-        const allServices = await databaseS.Servico.findAndCountAll();
+        const allServices = await databaseS.Servico.findAll();
 
-        return res.render('services', { allServices });
-
-    },
-    viewAddService: (req, res) => {
-        res.render('adicionarService')
+        return res.json(allServices);
     },
     createServico: async (req, res) => {
         const { procedimento, description } = req.body;
@@ -46,7 +42,7 @@ const serviceController = {
             }
         });
 
-        return res.redirect("/servicos")
+        return res.send(`ID: ${id} apagado com sucesso!`)
     }
 }
 

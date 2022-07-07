@@ -3,6 +3,7 @@ import Footer from "../../Components/Footer";
 import Fundo from '../../Assets/sobrancelhas.jpg';
 import Salao from '../../Assets/salao.jpg';
 import './style.css'
+import CardServico from "../../Components/Servicos";
 
 function Home() {
     return (
@@ -29,15 +30,7 @@ function Home() {
             </section>
             <section id="2" className="container-service">
                 <span className="service-span">Serviços</span>
-                <ul className="list-service">
-                    <li className="content-li-service">
-                        <figure className="service-imgs"><img src="/img/massagem.jpg" alt=""/></figure>
-                        <h2>Massagem</h2>
-                        <p className="par-service">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dignissimos harum quibusdam esse adipisci eius.
-                        </p>
-                        <a className="nav-agend" href="#0">Agendar</a>
-                    </li>
-                </ul>
+                <CardServico />
             </section>
             <section id="3" className="container-depoiments">
                 <span className="span-depoiments">Comentários</span>

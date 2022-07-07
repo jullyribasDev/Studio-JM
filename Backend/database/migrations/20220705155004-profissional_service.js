@@ -1,16 +1,12 @@
 'use strict';
 
 module.exports = {
-  async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('comentario', {
-      id_comentario: {
+  async up (queryInterface, Sequelize) {
+    await queryInterface.createTable('profissional_service', {
+      id_profissionalservice: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
-      },
-      comentario: {
-        type: Sequelize.STRING,
-        allowNull: false
       },
       fk_profissional: {
         type: Sequelize.INTEGER,
@@ -19,6 +15,13 @@ module.exports = {
           key: "id_profissional"
         }
       },
+      fk_service: {
+        type: Sequelize.INTEGER,
+        references:{
+            model: "servico",
+            key: "id_service"
+        }
+    },
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false
@@ -30,7 +33,7 @@ module.exports = {
     })
   },
 
-  async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('comentario')
+  async down (queryInterface, Sequelize) {
+    await queryInterface.dropTable('profissional_service');
   }
 };

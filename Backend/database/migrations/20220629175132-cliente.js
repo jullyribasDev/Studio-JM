@@ -21,7 +21,7 @@ module.exports = {
                 type: Sequelize.STRING(8),
                 allowNull: false
             },
-            dataNascimento: Sequelize.DATE,
+            dataNascimento: Sequelize.DATEONLY,
             genero: Sequelize.STRING,
             senha: Sequelize.STRING,
             fk_profissional: {

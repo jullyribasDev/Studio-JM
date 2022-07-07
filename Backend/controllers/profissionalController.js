@@ -6,6 +6,25 @@ const profissionalController = {
 
         return res.json(allProfissionais)
     },
+    showPerfil: async (req, res) => {
+        const { id } = req.params;
+        const showPerfil = await database.Profissional.findOne({
+            where: {
+                id_profissional: id
+            },
+            include: {
+                model: Servico,
+                as: "PorfissionalServicos",
+                required: true
+            },
+            include: {
+                model: LocalService,
+                as: "localService",
+                required: true
+            }
+        });
+        return res.json(showPerfil);
+    },
     create: async (req, res) => {
         const {
             nome,
@@ -80,11 +99,11 @@ const profissionalController = {
 
         return res.send(`Profissional "${nome}", de ID: "${id}", atualizado com Sucesso!`)
     },
-    destroy: async(req, res) => {
-        const {id} =req.params;
+    destroy: async (req, res) => {
+        const { id } = req.params;
 
         await database.Profissional.destroy({
-            where:{
+            where: {
                 id_profissional: id
             }
         });

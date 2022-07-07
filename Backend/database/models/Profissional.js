@@ -19,7 +19,7 @@ module.exports = (Sequelize, DataType) => {
             type: DataType.STRING,
             allowNull: false
         },
-        dataNascimento: DataType.DATE,
+        dataNascimento: DataType.DATEONLY,
         genero: DataType.STRING,
         senha: DataType.STRING,
     }, {
@@ -43,6 +43,11 @@ module.exports = (Sequelize, DataType) => {
         Profissional.hasMany(models.LocalService,{
             as:"localService",
             foreignKey: "fk_profissional"
+        });
+        Profissional.belongsToMany(models.Servico, {
+            foreignKey: "fk_service",
+            as: "PorfissionalServicos",
+            through: 'models.ProfissionalService'
         });
     }
 

@@ -2,10 +2,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    flex-grow: 1;
     background-color: #C4C4C4;
-    margin-top: 20%;
 }
 
 .content-services-cabecalho {
@@ -33,6 +32,7 @@
     background-color: #C16906;
     font-size: 14px;
     padding: 5px;
+    margin-left: 30px;
 }
 
 .content-services-main {
@@ -48,13 +48,13 @@
 
 .cards-service {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 85%;
     background-color: white;
-    padding: 8px;
-    gap: 10px;
+    padding: 2px 5px 8px 5px;
+    gap: 5px;
     box-shadow: 0 1px 2px black;
     border-radius: 2px;
 }
@@ -74,7 +74,7 @@
 }
 
 .img-card>img {
-    width: 100%
+    width: 45%
 }
 
 .text-card {
@@ -93,114 +93,133 @@
     background-color: #C16906;
     padding: 5px;
 }
+
 @media(min-width:480px) {
     /*main*/
     .cards-service {
-        width: 55%;
-        padding: 10px;
-        gap: 10px;
+        width: 70%;
     }
+
     .img-card {
         width: 85%;
     }
+
     .text-card {
         gap: 15px;
     }
+
     .text-card>a {
         padding: 8px;
     }
-    
+
 }
 
 @media(min-width:768px) {
+
     /*main*/
     .container-serviceAll {
-        margin-top: 15%;
+        margin-top: 0;
     }
+
     .content-services-cabecalho {
         padding: 15px 5px;
         gap: 15px;
     }
+
     .content-services-cabecalho>span {
         font-size: 25px;
     }
+
     .content-services-cabecalho>.addService {
-        width: 30%;
+        width: 25%;
         font-size: 20px;
         padding: 7px 5px;
     }
+
     .content-services-main {
         padding: 15px 10px;
     }
+
     .cards-service {
         width: 45%;
         padding: 10px;
         gap: 10px;
     }
+
     .img-card {
         width: 85%;
     }
+
     .img-card>p {
         font-size: 22px;
     }
+
     .text-card {
         gap: 15px;
     }
+
     .text-card>p {
         font-size: 19px;
     }
+
     .text-card>a {
         padding: 12px 15px;
     }
 }
 
 @media(min-width:992px) {
+
     /*main*/
     .cards-service {
-        width: 35%;
-        padding: 10px;
-        gap: 10px;
+        width: 31%;
     }
 }
 
 @media(min-width:1200px) {
+
     /*main*/
+    .cards-service {
+        width: 30%;
+      
+    }
     .container-serviceAll {
         margin-top: 12%;
     }
+
     .content-services-cabecalho {
         padding: 20px 5px;
         gap: 15px;
     }
+
     .content-services-cabecalho>span {
         font-size: 29px;
     }
+
     .content-services-cabecalho>.addService {
-        width: 25%;
+        width: 20%;
         font-size: 24px;
         font-weight: 600;
         letter-spacing: 1px;
         padding: 10px 5px;
     }
-    .cards-service {
-        width: 35%;
-        padding: 25px 15px;
-        gap: 15px;
-    }
     .img-card {
         width: 80%;
     }
+
     .img-card>p {
         font-size: 29px;
     }
+
     .text-card {
         gap: 20px;
     }
+
     .text-card>p {
         font-size: 24px;
     }
+
     .text-card>a {
-        padding: 15px 25px;
+        padding: 12px 20px;
         font-size: 20px;
         font-weight: 600;
         letter-spacing: 1px;
@@ -208,40 +227,36 @@
 }
 
 @media(min-width:1600px) {
+
     /*main*/
     .container-serviceAll {
-        margin-top: 10%;
+        margin-top: 0;
     }
+
     .content-services-cabecalho {
-        padding: 25px 20px;
+        padding: 15px 20px;
         gap: 20px;
     }
+
     .content-services-cabecalho>span {
-        font-size: 39px;
+        font-size: 26px;
     }
+
     .content-services-cabecalho>.addService {
-        font-size: 30px;
-        padding: 12px 5px;
+        font-size: 18px;
+        padding: 10px 5px;
+        width: 15%;
+
     }
+
     .cards-service {
-        width: 39%;
-        padding: 30px 25px;
-        gap: 30px;
-    }
-    .img-card {
-        width: 85%;
-    }
-    .img-card>p {
-        font-size: 42px;
-    }
-    .text-card {
-        gap: 25px;
+        width: 22%;
     }
     .text-card>p {
-        font-size: 32px;
+        font-size: 19px;
     }
+
     .text-card>a {
-        padding: 17px 28px;
-        font-size: 28px;
+       padding: 8px 12px;;
     }
 }

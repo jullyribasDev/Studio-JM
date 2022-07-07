@@ -3,10 +3,10 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var clienteRouter = require('./routes/cliente');
-var equipeRouter = require('./routes/equipe')
 var serviceRouter = require('./routes/service');
 var contactRouter = require('./routes/contact');
 var profissionalRouter = require('./routes/profissional');
@@ -22,10 +22,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cors());
 
 app.use('/', indexRouter);
 app.use('/cliente', clienteRouter);
-app.use('/equipe', equipeRouter);
 app.use('/servicos', serviceRouter);
 app.use('/contato', contactRouter);
 app.use('/profissional', profissionalRouter);

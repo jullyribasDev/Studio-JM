@@ -1,6 +1,7 @@
 const database = require('../database/models');
 const sequelize = require('sequelize');
 const op = sequelize.Op;
+const bcrypt = require('bcrypt');
 
 const clienteController = {
     allClientes: async (req, res) => {
@@ -14,11 +15,24 @@ const clienteController = {
             where: {
                 nome: {
                     [op.like]: `%${key}%`
+                },
+                include: {
+                    model: Profissional,
+                    as: "profissional",
+                    required: true
+                },
+                include:{
+                    model: Agendamento,
+                    as: "agendamento",
+                    required: true
                 }
             }
         });
-
-        return res.json(oneCliente);
+        if (oneCliente == null) {
+            return res.status(500).send("ERROR: Cliente não registrado em nosso Banco de Dados!")
+        } else {
+            return res.json(oneCliente);
+        }
     },
     create: async (req, res) => {
         const {
@@ -34,7 +48,7 @@ const clienteController = {
             genero,
             senha
         } = req.body;
-
+        const hash = await bcrypt.hash(senha, 10);
         const Cliente = await database.Cliente.create({
             nome,
             userName,
@@ -46,7 +60,7 @@ const clienteController = {
             cep,
             dataNascimento,
             genero,
-            senha,
+            senha: hash
         });
 
         return res.json(Cliente);

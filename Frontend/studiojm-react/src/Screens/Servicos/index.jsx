@@ -1,8 +1,10 @@
+
+import { Link } from "react-router-dom";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import '../Home/style.css'
 import './style.css'
-
+import CardServico from "../../Components/Servicos";
 
 function Servico() {
     return (
@@ -11,20 +13,10 @@ function Servico() {
             <main className="container-serviceAll">
                 <section className="content-services-cabecalho">
                     <span>"Conheça todos os nossos procedimentos"</span>
-                    <a className="addService" href="/servicos/addService">+ Adicionar</a>
+                    <Link className="addService" to="/servicos/addService">+ Adicionar</Link>
                 </section>
-
                 <section className="content-services-main">
-                    <div className="cards-service">
-                        <div className="img-card">
-                            <img src="/img/massagem.jpg" alt="Serviço Massagem" />
-                            <p>Nome do procedimento</p>
-                        </div>
-                        <div className="text-card">
-                            <p>Descrição do procedimento</p>
-                            <a href="#0">Agendar</a>
-                        </div>
-                    </div>
+                    <CardServico />
                 </section>
             </main>
             <Footer />

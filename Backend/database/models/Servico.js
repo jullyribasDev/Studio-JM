@@ -22,6 +22,11 @@ module.exports = (Sequelize, DataType) => {
         Servico.hasMany(models.Agendamento, {
             as: "agendamento",
             foreignKey: "fk_service"
+        });
+        Servico.belongsToMany(models.Profissional, {
+            foreignKey: "fk_profissional",
+            as: "ServicosProfissional",
+            through:' models.ProfissionalService'
         })
     };
 

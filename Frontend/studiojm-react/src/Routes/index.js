@@ -4,13 +4,16 @@
 // import Profissional from '../Screens/EditPerfilProfissional';
 
 // function Routers() {
-//     <BrowserRouter>
-//         <Routes>
-//             <Route path='/' exec element={<Home />} />
-//             <Route path='/servico' exec element={<Servico />} />
-//             <Route path='/profissional' exec element={<Profissional />} />
-//         </Routes>
-//     </BrowserRouter>
+//     return (
+//         <BrowserRouter>
+//             <Routes>
+//                 <Route path='/' element={<Home />} />
+//                 <Route path='/servico' element={<Servico />} />
+//                 <Route path='/profissional' element={<Profissional />} />
+//             </Routes>
+//         </BrowserRouter>
+//     )
+
 // };
 
 // export default Routers;

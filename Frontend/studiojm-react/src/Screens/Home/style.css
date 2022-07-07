@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,400&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400&family=Ropa+Sans&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,6 +7,13 @@
     border: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
 ul,
 ol {
     list-style: none;
@@ -22,7 +30,8 @@ a {
 input {
     outline: 0;
 }
-select{
+
+select {
     outline: 0;
 }
 
@@ -197,11 +206,13 @@ select{
 /* fim sobre */
 
 .container-service {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding: 70px 20px;
+    flex-wrap: wrap;
+    padding: 70px 5px;
+    gap: 12px;
     position: relative;
 }
 
@@ -218,47 +229,6 @@ select{
     font-size: 18px;
     box-shadow: 1px 1px 3px black;
 }
-
-.list-service {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.content-li-service {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 8px 5px 10px 5px;
-    gap: 2px;
-    box-shadow: 0px 0px 1px black;
-}
-
-.content-li-service>p {
-    text-align: center;
-}
-
-.content-li-service>a {
-    background-color: #C16906;
-    padding: 6px;
-    margin-top: 10px;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-.service-imgs {
-    border: 1px solid #930;
-    width: 210px;
-    height: 160px;
-    display: flex;
-}
-
-.service-imgs img {
-    width: 100%;
-}
-
 
 /* fim service */
 
@@ -352,7 +322,6 @@ select{
     width: 100%;
     background-color: #524646;
     align-items: center;
-    flex-grow: 1;
 }
 
 .links {
@@ -427,168 +396,216 @@ select{
     .container-header {
         padding: 2px 10px 2px 1px;
     }
+
     .container-search>input {
         height: 35px;
         font-size: 14px;
     }
+
     .lupa-search {
         width: 20px;
         height: 20px;
     }
+
     .menu-opc {
         width: 9%;
     }
+
     .text-principal::before {
         height: 65px;
     }
+
     .text-principal {
         left: 20px;
         bottom: 15px;
     }
+
     .text-principal>h1 {
         font-size: 30px;
     }
+
     .text-principal>p {
         font-size: 20px;
     }
+
     /*sobre*/
     .container-sobre {
         padding: 50px 38px 80px 38px;
         gap: 20px;
     }
+
     .content-text {
         gap: 15px;
     }
+
     .content-text>h2 {
         font-size: 28px;
     }
+
     .content-text>h4 {
         align-self: flex-start;
         font-size: 18px;
     }
+
     .content-text>p {
         font-size: 17px;
     }
+
     .content-img {
         width: 402px;
     }
+
     /*service*/
     .container-service {
         padding: 120px 20px;
     }
+
     .container-service>span {
         padding: 35px 85px;
         font-size: 23px;
     }
+
     .list-service {
         padding: 0 35px;
     }
+
     .content-li-service {
         padding: 20px;
         gap: 4px;
     }
+
     .content-li-service>a {
         padding: 10px 15px;
         margin-top: 10px;
         font-size: 16px;
     }
+
     /*depoimentos*/
     .container-depoiments>span {
         top: -38px;
         padding: 25px;
         font-size: 20px;
     }
+
     .container-depoiments::before {
         height: 4px;
     }
+
     .content-depoiments {
         padding: 5px 20px;
         gap: 15px;
     }
+
     .depoiment-caixa {
         padding: 15px 20px;
         gap: 15px;
     }
+
     .depoiment-caixa>p {
         font-size: 14px;
     }
+
     .container-depoiments::after {
         height: 4px;
     }
+
     /*footer*/
     .links-lista {
         gap: 10px;
     }
+
     .links-itens>a {
         font-size: 19px;
     }
+
     .redes-itens {
         width: 7%;
     }
 }
 
 @media(min-width:768px) {
-    .container-logo {
-        width: 15%;
+    .container-header {
+        padding: 0px 10px 0px 1px;
     }
+
+    .container-logo {
+        width: 13%;
+    }
+
     .container-search>input {
         padding: 5px;
-        height: 45px;
+        height: 40px;
         font-size: 18px;
     }
+
     .lupa-search {
         width: 25px;
         height: 25px;
     }
+
     .menu-opc {
-        width: 7%;
+        width: 6%;
     }
+
     .text-principal::before {
         height: 73px;
     }
+
     .text-principal {
         left: 25px;
     }
+
     .text-principal>h1 {
         font-size: 35px;
     }
+
     .text-principal>p {
         font-size: 25px;
     }
+
     /*sobre*/
     .container-sobre {
         padding: 90px 38px 80px 38px;
         gap: 20px;
     }
+
     .content-text::before {
         width: 170px;
         height: 10px;
         left: 20px;
     }
+
     .content-text {
         gap: 15px;
         padding: 45px 20px;
     }
+
     .content-text>h2 {
         font-size: 35px;
     }
+
     .content-text>h4 {
         align-self: flex-start;
         font-size: 25px;
     }
+
     .content-text>p {
         font-size: 22px;
     }
+
     .content-img {
         width: 685px;
     }
+
     .container-service {
         padding: 200px 5px 170px 5px;
     }
+
     .container-service>span {
         padding: 60px 150px;
         font-size: 35px;
     }
+
     .list-service {
         align-items: center;
         justify-content: center;
@@ -598,26 +615,31 @@ select{
         padding: 0;
         gap: 15px;
     }
+
     .content-li-service {
         width: 350px;
         padding: 20px;
         gap: 5px;
         box-shadow: 0px 1px 3px black;
     }
+
     .content-li-service>p {
         font-size: 18px;
     }
+
     .content-li-service>a {
         padding: 12px 20px;
         margin-top: 10px;
         font-size: 18px;
     }
+
     /*depoimentos*/
     .container-depoiments>span {
         top: -46px;
         padding: 30px;
         font-size: 25px;
     }
+
     .content-depoiments {
         flex-direction: row;
         flex-wrap: wrap;
@@ -627,56 +649,83 @@ select{
         width: 100%;
         gap: 15px;
     }
+
     .depoiment-caixa {
         width: 350px;
         padding: 15px 20px;
         gap: 15px;
         box-shadow: 0px 1px 3px black;
     }
+
     .depoiment-caixa>p {
         font-size: 17px;
     }
+
     .depoiment-caixa>.link-mais {
         font-size: 16px;
     }
+
     /*footer*/
     .logo-footer {
         width: 30%;
     }
+
     .links-lista {
         gap: 15px;
     }
+
     .rede-sociais {
         padding: 0 0 30px 0;
     }
+
     .redes-itens {
         width: 4%;
     }
 }
 
 @media(min-width:992px) {
+    .container-header {
+        padding: 2px 5px 2px 1px;
+    }
+
+    .container-logo {
+        width: 12%;
+    }
+
     .menu-opc {
         display: none;
     }
+
     .container-form {
-        width: 60%;
+        width: 72%;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 15px;
+        gap: 12px;
     }
+
+    .container-search>input {
+        padding: 5px;
+        height: 35px;
+        font-size: 18px;
+    }
+
     .container-form .left-navbar {
         display: flex;
-        gap: 25px;
-        font-size: 17px;
-        font-weight: 500;
+        gap: 24px;
     }
+
     .nav-left {
         position: relative;
         transition: all 0.3s;
     }
+
+    .nav-left>a {
+        font-size: 2px;
+    }
+
     .nav-left:hover::after {
         cursor: pointer;
         content: " ";
@@ -688,14 +737,17 @@ select{
         bottom: -10px;
         background-color: rgba(0, 0, 0, 0.651);
     }
+
     .login {
         letter-spacing: 1px;
     }
+
     .cadastro {
         font-weight: 500;
         position: relative;
         transition: 0.3s;
     }
+
     .cadastro:hover::after {
         cursor: pointer;
         content: " ";
@@ -707,6 +759,7 @@ select{
         bottom: -10px;
         background-color: rgba(0, 0, 0, 0.651);
     }
+
     .container-log {
         background-color: #044357;
         align-items: center;
@@ -717,9 +770,11 @@ select{
         border-radius: 5px;
         transition: all 0.3s;
     }
+
     .container-log:hover {
         background-color: #072933;
     }
+
     .nav-log {
         display: flex;
         align-items: center;
@@ -730,95 +785,118 @@ select{
         gap: 10px;
         margin-left: 20px;
     }
+
     .log-img {
         position: absolute;
         width: 30px;
         height: 30px;
         right: 5px;
     }
+
     /*fim header*/
     .text-principal::before {
         height: 85px;
     }
+
     .text-principal {
         left: 30px;
     }
+
     .text-principal>h1 {
         font-size: 40px;
     }
+
     .text-principal>p {
         font-size: 30px;
     }
+
     .container-sobre {
         padding: 100px 70px 80px 70px;
         gap: 20px;
     }
+
     .content-text::before {
         left: 40px;
     }
+
     .content-text {
         gap: 15px;
         padding: 45px 40px;
     }
+
     .content-img {
         width: 700px;
     }
+
     .list-service {
         justify-content: flex-start;
         gap: 10px;
     }
+
     .content-li-service {
         width: 318px;
         gap: 5px;
     }
+
     /*depoimentos*/
     .container-depoiments {
         padding: 80px 10px;
     }
+
     .container-depoiments>span {
         top: -58px;
         padding: 40px;
         font-size: 30px;
     }
+
     .content-depoiments {
         justify-content: flex-start;
         padding: 0;
         gap: 10px;
     }
+
     .depoiment-caixa {
         width: 315px;
         padding: 10px 10px;
         gap: 15px;
         box-shadow: 0px 1px 3px black;
     }
+
     .img-depoiments {
         width: 190px;
         height: 160px;
         display: flex;
     }
+
     .img-depoiments>img {
         width: 100%;
     }
+
     .container-footer {
         flex-direction: row;
         justify-content: space-around;
         padding: 10px;
     }
+
     .links {
         width: 70%;
         padding: 0;
     }
+
     .logo-footer {
         width: 40%;
     }
+
     .links-lista {
         gap: 10px;
     }
+
     .rede-sociais {
         width: 40%;
         display: flex;
         padding: 0;
     }
+
     .redes-itens {
         width: 7%;
     }
@@ -828,36 +906,59 @@ select{
     .container-header {
         padding: 0 15px 0 0;
     }
+
     .container-logo {
-        width: 12%;
+        width: 10%;
     }
+
+    .container-search>input {
+        height: 37px;
+    }
+
+    .container-form {
+        width: 65%;
+        gap: 16px;
+
+    }
+
     .container-form .left-navbar {
         gap: 40px;
     }
+
     .nav-log {
         gap: 15px;
         font-size: 20px;
         margin: 0;
     }
+
     .log-img {
         width: 32px;
         height: 32px;
         right: 8px;
     }
+
+    .container-carossel>img {
+        height: 81vh;
+    }
+
     .text-principal::before {
         height: 100px;
     }
+
     .text-principal {
         position: absolute;
         bottom: 40px;
         left: 50px;
     }
+
     .text-principal>h1 {
         font-size: 45px;
     }
+
     .text-principal>p {
         font-size: 35px;
     }
+
     /*fim header*/
     .container-sobre {
         flex-direction: row;
@@ -865,60 +966,65 @@ select{
         padding: 100px 15px 60px 15px;
         gap: 15px;
     }
+
     .content-text::before {
         left: 30px;
     }
+
     .content-text {
         width: 45%;
         gap: 15px;
         padding: 50px 25px 45px 30px;
     }
+
     .content-img {
         width: 55%;
-    }
-    .list-service {
-        gap: 20px;
-        padding: 0 0 0 15px;
-    }
-    .content-li-service {
-        padding: 40px 25px;
-        width: 32%;
     }
     .container-depoiments>span {
         top: -68px;
         padding: 45px;
         font-size: 30px;
     }
+
     .content-depoiments {
         padding: 0 0 0 5px;
         gap: 20px;
     }
+
     .depoiment-caixa {
         width: 32%;
         padding: 20px 15px;
     }
+
     .img-depoiments {
         width: 210px;
         height: 180px;
     }
+
     .links {
         width: 75%;
     }
+
     .logo-footer {
         width: 30%;
     }
+
     .links-lista {
         gap: 20px;
     }
+
     .links-itens>a {
         font-size: 22px;
     }
+
     .redes-lista {
         gap: 30px;
     }
+
     .redes-itens {
         width: 8%;
     }
+
     .rede-titulos {
         letter-spacing: 2px;
         font-size: 24px;
@@ -927,82 +1033,114 @@ select{
 
 @media(min-width:1600px) {
     .container-header {
-        padding: 0 15px 0 0; 
+        padding: 0px 15px 0px 0;
     }
+
     .container-logo {
-        width: 10%;
+        width: 9%;
+    }
+    .container-search>input {
+        height: 40px;
     }
     .container-form {
-        gap: 30px;
+        width: 55%;
+        gap: 16px;
+
     }
-    .container-form .left-navbar {
-        gap: 50px;
+    .left-navbar{
+        width: 100%;
+        justify-content: center;
+    }
+    .nav-left>.a {
         font-size: 22px;
     }
+    .container-form .left-navbar {
+        gap: 35px;
+    }
+
     .nav-log {
         font-size: 22px;
     }
+
     .log-img {
         width: 32px;
         height: 32px;
         right: 8px;
     }
+
     .container-carossel>img {
-        height: 98vh;
+        height: 80vh;
     }
+
     .text-principal::before {
-        height: 110px;
+        height: 90px;
     }
+
     .text-principal>h1 {
-        font-size: 50px;
-    }
-    .text-principal>p {
         font-size: 40px;
     }
+
+    .text-principal>p {
+        font-size: 35px;
+    }
+
     /*fim header*/
     .container-sobre {
         justify-content: space-around;
         gap: 0;
     }
+
     .content-text {
         padding: 50px 35px 45px 30px;
     }
+
     .content-text>p {
         padding: 0 100px 0 0;
     }
+
     .content-img {
         width: 40%;
     }
+
     .list-service {
         justify-content: center;
         gap: 20px;
     }
+
     .content-li-service {
         width: 370px;
     }
+
     .container-depoiments {
         padding: 110px 15px
     }
+
     .container-depoiments>span {
         top: -78px;
         padding: 55px;
         font-size: 35px;
     }
+
     .content-depoiments {
         justify-content: center;
     }
+
     .depoiment-caixa {
         width: 23%;
     }
+
     .logo-footer {
         width: 25%;
     }
+
     .rede-sociais {
         gap: 25px;
     }
+
     .redes-lista {
         gap: 32px;
     }
+
     .redes-itens {
         width: 6%;
     }

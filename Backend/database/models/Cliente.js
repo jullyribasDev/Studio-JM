@@ -19,7 +19,7 @@ module.exports = (Sequelize, DataType) => {
             type: DataType.STRING,
             allowNull: false
         },
-        dataNascimento: DataType.DATE,
+        dataNascimento: DataType.DATEONLY,
         genero: DataType.STRING,
         senha: DataType.STRING,
         fk_profissional: DataType.INTEGER,
