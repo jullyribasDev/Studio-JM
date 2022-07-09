@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,400&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400&family=Ropa+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-atendimento {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.content-service-type {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.content-service-type>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.type-h1{
+    font-size: 18px;
+}
+.service-span{
+    background-color: darkgrey;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.content-endereco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 4px;
+}
+.content-endereco>a{
+    color: blue;
+    font-size: 14px;
+}
+.content-endereco>span{
+    border: 1px solid black;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 2px;
+}
+.container-calende-perfil-agendamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    gap: 15px;
+    padding: 0 0 25px 0;
+}
+.content-perfil-agendamento{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #C4C4C4;
+    box-shadow: 0 0px 2px black;
+}
+.date-agend{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 12px;
+}
+.date-agend>a{
+    color: blue;
+}
+.perfil-agend{
+    background-color: aliceblue;
+    padding: 5px;
+    width: 40%;
+    display: flex;
+}
+.perfil-agend>img{
+    width: 100%
+}
+.content-calend-horar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.calende-agenda{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.calende-agenda>span{
+    align-self: flex-start;
+    margin-left: 15px;
+    font-weight: 600;
+}
+.calende-agenda>h1{
+    border: 1px solid black;
+    width: 88%;
+    padding: 70px;
+}
+.horar-agenda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+    padding: 10px 2px;
+}
+.list-hor{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list-hor>li{
+    border: 1px solid black;
+    padding: 1px 5px;
+}
+.guia-hor-agend{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.button-agendamento{
+    background-color: #23AAF6;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+.button-agendamento:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #1d7bb1;
+    box-shadow: 0px 1px 1px black;
+}
+@media(min-width:480px){
+    .container-atendimento {
+        gap: 30px;
+    }
+    .content-service-type {
+        flex-direction: row;
+        gap: 40px;
+    }
+    .content-perfil-agendamento{
+        padding: 10px 20px;
+    }
+    .perfil-agend{
+        width: 30%;
+    }
+    .calende-agenda>h1{
+        width: 70%;
+        padding: 80px 40px;
+    }
+    .horar-agenda{
+        gap: 0;
+    }
+    .list-hor{
+        width: 50%;
+    }
+    .list-hor>li{
+        padding: 2px 10px;
+    }
+    .guia-hor-agend{
+       line-height: 20px;
+       font-size: 18px;
+    }
+    .button-agendamento{
+        padding: 12px;
+        font-size: 17px;
+    }
+  
+}
+@media(min-width:768px){
+    
+}
