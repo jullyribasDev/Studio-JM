@@ -1,8 +1,14 @@
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import Perfil from '../../Assets/login-icon-2.jpg'
+import Calendar from 'react-calendar'
+import 'react-calendar/dist/Calendar.css';
+import { useState } from "react";
 import './style.css'
+
+
 function Agendamento() {
+    const [calend, setCalend] = useState(new Date())
     return (
         <>
             <Header />
@@ -37,7 +43,7 @@ function Agendamento() {
                 <div className="content-calend-horar">
                     <div className="calende-agenda">
                         <span>&gt;Selecione o dia em azul</span>
-                        <h1>Calendário</h1>
+                        <Calendar onChange={setCalend} value={calend} />
                     </div>
                     <div className="horar-agenda">
                         <ul className="list-hor">

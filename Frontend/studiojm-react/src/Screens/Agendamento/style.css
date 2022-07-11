@@ -26,16 +26,19 @@
     align-items: center;
     gap: 20px;
 }
-.content-service-type>div{
+
+.content-service-type>div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
 }
-.type-h1{
+
+.type-h1 {
     font-size: 18px;
 }
-.service-span{
+
+.service-span {
     background-color: darkgrey;
     width: 100%;
     display: flex;
@@ -43,6 +46,7 @@
     justify-content: center;
     padding: 5px;
 }
+
 .content-endereco {
     display: flex;
     flex-direction: column;
@@ -51,11 +55,13 @@
     width: 100%;
     gap: 4px;
 }
-.content-endereco>a{
+
+.content-endereco>a {
     color: blue;
     font-size: 14px;
 }
-.content-endereco>span{
+
+.content-endereco>span {
     border: 1px solid black;
     width: 90%;
     display: flex;
@@ -63,16 +69,19 @@
     justify-content: center;
     padding: 4px 2px;
 }
-.container-calende-perfil-agendamento{
+
+.container-calende-perfil-agendamento {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 98%;
+    width: 100%;
     gap: 15px;
     padding: 0 0 25px 0;
 }
-.content-perfil-agendamento{
+
+.content-perfil-agendamento {
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -80,26 +89,31 @@
     background-color: #C4C4C4;
     box-shadow: 0 0px 2px black;
 }
-.date-agend{
+
+.date-agend {
     display: flex;
     flex-direction: column;
     font-size: 14px;
     font-weight: 500;
     gap: 12px;
 }
-.date-agend>a{
+
+.date-agend>a {
     color: blue;
 }
-.perfil-agend{
+
+.perfil-agend {
     background-color: aliceblue;
     padding: 5px;
     width: 40%;
     display: flex;
 }
-.perfil-agend>img{
+
+.perfil-agend>img {
     width: 100%
 }
-.content-calend-horar{
+
+.content-calend-horar {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -107,24 +121,22 @@
     align-items: center;
     gap: 12px;
 }
-.calende-agenda{
+
+.calende-agenda {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    padding: 0 10px;
 }
-.calende-agenda>span{
+
+.calende-agenda>span {
     align-self: flex-start;
     margin-left: 15px;
     font-weight: 600;
 }
-.calende-agenda>h1{
-    border: 1px solid black;
-    width: 88%;
-    padding: 70px;
-}
-.horar-agenda{
+.horar-agenda {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,18 +144,21 @@
     gap: 5px;
     padding: 10px 2px;
 }
-.list-hor{
+
+.list-hor {
     width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.list-hor>li{
+
+.list-hor>li {
     border: 1px solid black;
     padding: 1px 5px;
 }
-.guia-hor-agend{
+
+.guia-hor-agend {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -151,7 +166,8 @@
     justify-content: center;
     gap: 20px;
 }
-.button-agendamento{
+
+.button-agendamento {
     background-color: #23AAF6;
     padding: 10px;
     font-weight: 600;
@@ -160,49 +176,310 @@
     border-radius: 2px;
     transition: all 0.3s;
 }
-.button-agendamento:hover{
+
+.button-agendamento:hover {
     cursor: pointer;
     color: white;
     background-color: #1d7bb1;
     box-shadow: 0px 1px 1px black;
 }
-@media(min-width:480px){
+
+@media(min-width:480px) {
     .container-atendimento {
         gap: 30px;
     }
+
     .content-service-type {
         flex-direction: row;
         gap: 40px;
     }
-    .content-perfil-agendamento{
+
+    .content-perfil-agendamento {
         padding: 10px 20px;
     }
-    .perfil-agend{
+
+    .perfil-agend {
         width: 30%;
     }
-    .calende-agenda>h1{
-        width: 70%;
-        padding: 80px 40px;
+
+    .react-calendar {
+        width: 80%;
+        padding: 2px 4px;
     }
-    .horar-agenda{
+
+    .horar-agenda {
         gap: 0;
     }
-    .list-hor{
+
+    .list-hor {
         width: 50%;
     }
-    .list-hor>li{
+
+    .list-hor>li {
         padding: 2px 10px;
     }
-    .guia-hor-agend{
-       line-height: 20px;
-       font-size: 18px;
+
+    .guia-hor-agend {
+        line-height: 20px;
+        font-size: 18px;
     }
-    .button-agendamento{
+
+    .button-agendamento {
         padding: 12px;
         font-size: 17px;
     }
-  
+
 }
-@media(min-width:768px){
-    
+
+@media(min-width:768px) {
+    .content-service-type {
+        gap: 60px;
+    }
+
+    .service-span {
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    .type-h1 {
+        font-size: 23px;
+    }
+
+    .content-endereco {
+        gap: 8px;
+    }
+
+    .content-endereco>a {
+        font-size: 17px;
+    }
+
+    .content-endereco>span {
+        width: 70%;
+        padding: 7px 2px;
+        font-size: 18px;
+    }
+
+    .container-calende-perfil-agendamento {
+        gap: 40px;
+    }
+
+    .content-perfil-agendamento {
+        width: 80%;
+        padding: 15px 0;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .date-agend {
+        font-size: 18px;
+        gap: 15px;
+    }
+
+    .content-calend-horar {
+        gap: 0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .calende-agenda {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .calende-agenda>span {
+        font-size: 20px;
+    }
+    .horar-agenda {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .list-hor {
+        width: 50%;
+    }
+
+    .list-hor>li {
+        padding: 4px 15px;
+    }
+
+    .button-agendamento {
+        padding: 15px 25px;
+        font-size: 20px;
+    }
+}
+
+@media(min-width:992px) {
+    .content-service-type {
+        gap: 100px;
+    }
+
+    .service-span {
+        padding: 10px;
+        font-size: 19px;
+    }
+
+    .type-h1 {
+        font-size: 25px;
+    }
+
+    .content-endereco {
+        gap: 10px;
+    }
+
+    .content-endereco>a {
+        font-size: 18px;
+    }
+
+    .content-endereco>span {
+        padding: 8px 2px;
+        font-size: 18px;
+    }
+
+    .container-calende-perfil-agendamento {
+        gap: 0;
+        flex-direction: row;
+        position: relative;
+        padding: 0 0 100px 10px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .content-perfil-agendamento {
+        width: 70%;
+        padding: 30px 0;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .perfil-agend {
+        width: 40%;
+    }
+
+    .date-agend {
+        font-size: 16px;
+        gap: 12px;
+    }
+    .content-calend-horar {
+        gap: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .horar-agenda {
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .button-agendamento {
+        font-size: 24px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media(min-width:1200px) {
+    .container-calende-perfil-agendamento {
+        gap: 30px;
+        padding: 0 0 100px 30px;
+    }
+
+    .content-perfil-agendamento {
+        width: 60%;
+        padding: 30px 0;
+        gap: 60px;
+    }
+
+    .perfil-agend {
+        width: 32%;
+    }
+    .date-agend {
+        font-size: 14px;
+        gap: 12px;
+    }
+    .content-calend-horar {
+        gap: 0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .calende-agenda {
+        width: 50%;
+        align-items: flex-start;
+        gap: 5px;
+        padding: 5px 5px;
+    }
+    .horar-agenda {
+        padding: 30px 0 0 0;
+        width: 50%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .button-agendamento {
+        transform: translate(-50%, -70%);
+    }
+
+}
+@media(min-width:1600px){
+    .content-service-type {
+        gap: 200px;
+    }
+
+    .service-span {
+        padding: 10px;
+        font-size: 19px;
+    }
+
+    .type-h1 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .content-endereco {
+        gap: 10px;
+    }
+
+    .content-endereco>a {
+        font-size: 18px;
+    }
+
+    .content-endereco>span {
+        padding: 8px 2px;
+        font-size: 18px;
+    }
+    .container-calende-perfil-agendamento {
+        gap: 30px;
+        padding: 0 0 140px 30px;
+    }
+    .content-perfil-agendamento {
+        width: 60%;
+        padding: 40px 0;
+        gap: 50px;
+    }
+
+    .perfil-agend {
+        width: 30%;
+    }
+
+    .date-agend {
+        font-size: 18px;
+        gap: 20px;
+    }
+    .calende-agenda {
+        width: 45%;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 2px 5px 10px 5px;
+    }
+    .horar-agenda {
+        flex-direction: row;
+        gap: 0px;
+    }
+    .button-agendamento {
+        transform: translate(-80%, -100%);
+    }
 }
