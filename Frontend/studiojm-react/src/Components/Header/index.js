@@ -22,7 +22,7 @@ function Header() {
                         <li className="nav-left"><Link className='a' to="/profissionais">Nossa Equipe</Link></li>
                         <li className="nav-left"><Link className='a' to="/servicos">Serviços</Link></li>
                         <li className="nav-left"><a className='a' href="#3">Depoimentos</a></li>
-                        <li className="nav-left"><a className='a' href="#0">Agendamentos</a></li>
+                        <li className="nav-left"><Link className='a' to="/meus-agendamentos">Agendamentos</Link></li>
                     </ul>
                 </nav>
                 <nav className="nav-log">
