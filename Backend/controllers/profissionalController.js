@@ -8,11 +8,7 @@ const profissionalController = {
         return res.json(allProfissionais)
     },
     showPerfil: async (req, res) => {
-        const { id } = req.params;
         const showPerfil = await database.Profissional.findOne({
-            where: {
-                id_profissional: id
-            },
             include: {
                 model: Servico,
                 as: "PorfissionalServicos",
@@ -76,7 +72,7 @@ const profissionalController = {
             senha
         } = req.body;
         const hash = await bcrypt.hash(senha, 10);
-        await database.Profissional.update({
+        const updateProfissional = await database.Profissional.update({
             nome,
             userName,
             email,
@@ -95,19 +91,16 @@ const profissionalController = {
                 id_profissional: id
             }
         });
-
-        return res.send(`Profissional "${nome}", de ID: "${id}", atualizado com Sucesso!`)
+        return res.json(updateProfissional)
     },
     destroy: async (req, res) => {
         const { id } = req.params;
-
-        await database.Profissional.destroy({
+       const deleteProfissional = await database.Profissional.destroy({
             where: {
                 id_profissional: id
             }
         });
-
-        return res.send(`Usuario "${id}"`)
+        return res.json(deleteProfissional)
     }
 };
 

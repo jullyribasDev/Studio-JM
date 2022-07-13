@@ -23,7 +23,7 @@ function CardServico() {
                     </div>
                     <div className="text-card">
                         <p>{servico.description}</p>
-                        <Link to="/agendamento">Agendar</Link>
+                        <Link to="/agendar">Agendar</Link>
                     </div>
                 </div>
             ))}

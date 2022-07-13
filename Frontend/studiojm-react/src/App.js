@@ -5,15 +5,17 @@ import Profissional from './Screens/EditPerfilProfissional';
 import Agendamento from "./Screens/Agendamento";
 import Profissionais from "./Screens/Equipe";
 import AgendamentoProfissional from "./Screens/AgendamentosProfissional";
+import AgendamentoConcluido from "./Screens/AgendamentoConlcuido";
 function App() {
     return (
            <BrowserRouter>
                 <Routes>
-                    <Route path='/servicos' element={<Servico/>} />
-                    <Route path='/updateProfissional' element={<Profissional/>} />
-                    <Route path="/profissionais" element={<Profissionais />} />
-                    <Route path="/agendamento" element={<Agendamento />} />
-                    <Route path="/meus-agendamentos" element={<AgendamentoProfissional />} />
+                    <Route path='/servicos' exact element={<Servico/>} />
+                    <Route path='/updateProfissional' exact element={<Profissional/>} />
+                    <Route path="/profissionais" exact element={<Profissionais />} />
+                    <Route path="/agendar" exact element={<Agendamento />} />
+                    <Route path="/agendamentos" exact element={<AgendamentoProfissional />} />
+                    <Route path="/concluido" exact element={<AgendamentoConcluido />} />
 
                     <Route path='/' element={<Home/>} />
                 </Routes>

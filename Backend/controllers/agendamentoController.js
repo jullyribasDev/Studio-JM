@@ -2,7 +2,7 @@ const database = require('../database/models')
 
 const agendamentoController = {
     index: async (req, res) => {
-        const listAgendProfissional = await database.Agendamento.findAndCountAll({
+        const listAgendProfissional = await database.Agendamento.findAll({
             include: {
                 model: Cliente,
                 as: "cliente",

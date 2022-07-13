@@ -2,17 +2,14 @@ const database = require("../database/models")
 
 const localServiceController = {
     index: async (req, res) => {
-        const local = await database.LocalService.findAndCountAll();
-
+        const local = await database.LocalService.findAll();
         return res.json(local);
     },
     createlocal: async (req, res) => {
         const { localService } = req.body;
-
         const createLocal = await database.LocalService.create({
             localService
         });
-
         return res.json(createLocal)
     },
     update: async (req, res) => {
@@ -32,13 +29,13 @@ const localServiceController = {
     detroy: async (req, res) => {
         const { id } = req.params;
 
-        await database.LocalService.destroy({
+        const deleteLocal = await database.LocalService.destroy({
             where: {
                 id_local: id
             }
         });
 
-        return res.redirect("/servicos");
+        return res.json(deleteLocal);
     }
 };
 

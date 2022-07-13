@@ -36,13 +36,13 @@ const serviceController = {
     destroy: async (req, res) => {
         const { id } = req.params;
 
-        await databaseS.Servico.destroy({
+        const deleteService = await databaseS.Servico.destroy({
             where: {
                 id_service: id
             }
         });
 
-        return res.send(`ID: ${id} apagado com sucesso!`)
+        return res.json(deleteService)
     }
 }
 

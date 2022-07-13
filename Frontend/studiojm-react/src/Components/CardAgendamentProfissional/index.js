@@ -1,5 +1,6 @@
 import './style.css'
 import Perfil from '../../Assets/login-icon-2.jpg';
+import Endereco from '../Enderecos';
 function CardAgendamentProfissional() {
     return (
         <>
@@ -13,8 +14,7 @@ function CardAgendamentProfissional() {
                         <span>Manicure</span>
                         <span>Domiciliar</span>
                         <span>16/04/2002 - 13:00</span>
-                        <a>Endereço do cliente</a>
-                        <h2 className='data-endereco-cliente-agendamento'>Rua ******, Bairro ****, N° 4**</h2>
+                        <Endereco />
                     </div>
                 </div>
             </div>
