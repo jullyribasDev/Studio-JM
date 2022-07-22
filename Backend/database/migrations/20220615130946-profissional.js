@@ -25,6 +25,14 @@ module.exports = {
       dataNascimento: Sequelize.DATEONLY,
       genero: Sequelize.STRING,
       senha: Sequelize.STRING,
+      local: {
+       type: Sequelize.STRING,
+       allowNull: false
+      },
+      servicos: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false

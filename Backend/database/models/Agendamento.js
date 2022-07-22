@@ -4,7 +4,9 @@ module.exports = (Sequelize, DataType) => {
             type: DataType.INTEGER,
             primaryKey: true,
             autoIncrement: true,
-        }
+        },
+        fk_profissional: DataType.INTEGER,
+        fk_cliente: DataType.INTEGER,
     }, {
         tableName: 'agendamento',
         timestamps: true
@@ -18,10 +20,6 @@ module.exports = (Sequelize, DataType) => {
         Agendamento.belongsTo(models.Cliente, {
             as: "cliente",
             foreignKey: "fk_cliente"
-        });
-        Agendamento.belongsTo(models.Servico, {
-            as: "servico",
-            foreignKey: "fk_service"
         });
     };
     return Agendamento;

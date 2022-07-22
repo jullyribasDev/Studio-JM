@@ -7,19 +7,13 @@ const profissionalController = {
 
         return res.json(allProfissionais)
     },
+    oneProfissional: async( req, res) =>{
+        const {id} = req.params;
+        const oneProfissional = await database.Profissional.findByPk(id)
+        return res.json(oneProfissional)
+    },
     showPerfil: async (req, res) => {
-        const showPerfil = await database.Profissional.findOne({
-            include: {
-                model: Servico,
-                as: "PorfissionalServicos",
-                required: true
-            },
-            include: {
-                model: LocalService,
-                as: "localService",
-                required: true
-            }
-        });
+        const showPerfil = await database.Profissional.findOne();
         return res.json(showPerfil);
     },
     create: async (req, res) => {
@@ -33,6 +27,8 @@ const profissionalController = {
             bairro,
             cep,
             dataNascimento,
+            servicos,
+            local,
             genero,
             senha
         } = req.body;
@@ -48,10 +44,11 @@ const profissionalController = {
             bairro,
             cep,
             dataNascimento,
+            servicos,
+            local,
             genero,
             senha: hash
         });
-
         return res.json(newProfissional)
     },
     update: async (req, res) => {
@@ -67,8 +64,6 @@ const profissionalController = {
             cep,
             dataNascimento,
             genero,
-            services,
-            localService,
             senha
         } = req.body;
         const hash = await bcrypt.hash(senha, 10);
@@ -83,8 +78,6 @@ const profissionalController = {
             cep,
             dataNascimento,
             genero,
-            services,
-            localService,
             senha: hash
         }, {
             where: {
@@ -95,7 +88,7 @@ const profissionalController = {
     },
     destroy: async (req, res) => {
         const { id } = req.params;
-       const deleteProfissional = await database.Profissional.destroy({
+        const deleteProfissional = await database.Profissional.destroy({
             where: {
                 id_profissional: id
             }

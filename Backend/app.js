@@ -6,7 +6,6 @@ var logger = require('morgan');
 var cors = require('cors');
 
 var clienteRouter = require('./routes/cliente');
-var serviceRouter = require('./routes/service');
 var contactRouter = require('./routes/contact');
 var profissionalRouter = require('./routes/profissional');
 var agendamentoRouter = require('./routes/agendamento');
@@ -26,7 +25,6 @@ app.use(cors());
 
 
 app.use('/cliente', clienteRouter);
-app.use('/servicos', serviceRouter);
 app.use('/contato', contactRouter);
 app.use('/profissional', profissionalRouter);
 app.use('/agendamento', agendamentoRouter);

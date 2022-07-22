@@ -4,8 +4,10 @@ const router = express.Router();
 const profissionalController = require('../controllers/profissionalController');
 
 
-router.get('/all', profissionalController.index);
+router.get('/', profissionalController.index);
 router.get('/perfil', profissionalController.showPerfil);
+
+router.get('/agendar/:id', profissionalController.oneProfissional);
 
 router.post('/cadastro', profissionalController.create);
 

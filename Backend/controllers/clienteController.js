@@ -21,7 +21,7 @@ const clienteController = {
                     as: "profissional",
                     required: true
                 },
-                include:{
+                include: {
                     model: Agendamento,
                     as: "agendamento",
                     required: true
@@ -48,6 +48,13 @@ const clienteController = {
             genero,
             senha
         } = req.body;
+
+        if (await database.Cliente.findOne({ where: { email: email } })) {
+            return res.status(400).json({ error: "Email ja existe" })
+        };
+        if (await database.Cliente.findOne({ where: { userName: userName } })) {
+            return res.status(400).send({ error: "Usuário já existe" })
+        };
         const hash = await bcrypt.hash(senha, 10);
         const Cliente = await database.Cliente.create({
             nome,
@@ -64,6 +71,15 @@ const clienteController = {
         });
 
         return res.json(Cliente);
+    },
+    login: async (req, res) => {
+        const { userName, senha } = req.body;
+        const user = await database.Cliente.findOne({ where: { userName: userName } })
+        if (!user) { return res.status(400).json({ error: "Usuário não encontrado" }) }
+
+        if (!await bcrypt.compare(senha, user.senha)) {
+            return res.status(400).json({ error: "Senha inválida" })
+        } else { return res.send({ user }) }
     },
     update: async (req, res) => {
         const { id } = req.params;
@@ -82,7 +98,7 @@ const clienteController = {
         } = req.body;
         const hash = await bcrypt.hash(senha, 10);
 
-        const atualizarCliente = await database.Cliente.update({
+        await database.Cliente.update({
             nome,
             userName,
             email,
@@ -100,7 +116,7 @@ const clienteController = {
             }
         });
 
-        return res.json(atualizarCliente);
+        return res.json(`Cliente ${id} atualizado`);
     },
     destroy: async (req, res) => {
         const { id } = req.params;
@@ -110,7 +126,7 @@ const clienteController = {
             }
         });
 
-        return res.send("Deletado com Sucesso!");
+        return res.json(`Cliente ${id} deletado com sucesso!`);
     }
 };
 

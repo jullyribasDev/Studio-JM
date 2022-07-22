@@ -1,6 +1,5 @@
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
-import Endereco from "../../Components/Enderecos";
 import Concluido from '../../Assets/concluido.png';
 import './style.css';
 
@@ -13,7 +12,6 @@ function AgendamentoConcluido() {
                     <img src={Concluido} alt="Agendamento Concluido" />
                     <h1>Agendado com Sucesso</h1>
                 </div>
-                <Endereco />
                 <form  className="content-comentario">
                     <span>"Deixe seu comentário após seu atendimento!"</span>
                     <label htmlFor="comentario">Digite seu comentário aqui:</label>

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,400&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400&family=Ropa+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+input {
+    height: 30px;
+    padding: 2px 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+input:hover{
+    background-color: #ebe6e6;
+    outline:   0.1rem solid rgb(8, 80, 128);
+}
+
+label {
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.card-fomulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #C4C4C4;
+    padding: 10px 0px;
+    box-shadow: 0 0 4px black;
+}
+
+.container-formulario-profissional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    gap: 5px;
+}
+
+.content-name-profissional {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content-cep-bairro-profissional {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content-data-genero-profissional {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content-label-input-profissional {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-label-input-profissional {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* services*/
+
+.content-services-profissional {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 1px #272626;
+    padding: 4px;
+    margin-top: 4px;
+}
+.content-services-profissional>input{
+    flex-grow: 1;
+}
+
+/*atendimento*/
+
+.content-atendimento-profissional {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 5px 0;
+    gap: 50px;
+    box-shadow: 0 0 1px #272626;
+    padding: 4px;
+}
+
+.span-atendimento {
+    font-weight: 600;
+}
+
+.card-atendimento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.card-atendimento>label {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.salao-card {
+    margin-left: 15px;
+}
+
+.btn-cadastro-profissional{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-cadastro-profissional>button{
+    background-color: #d38c30;
+    width: 95%;
+    font-size: 16px;
+    padding: 10px 0;
+    margin-top: 15px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.btn-cadastro-profissional>button:hover{
+    color: white;
+    background-color: #6b420c;
+    cursor: pointer;
+}
+
+.exist-link-h3{
+    font-size: 15px;
+    margin-top: 15px;
+}
+.link-exit{
+    color: blue;
+}

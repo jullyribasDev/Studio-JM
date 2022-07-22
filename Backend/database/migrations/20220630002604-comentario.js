@@ -13,6 +13,7 @@ module.exports = {
         allowNull: false
       },
       fk_profissional: {
+        allowNull: false,
         type: Sequelize.INTEGER,
         references: {
           model: "profissional",

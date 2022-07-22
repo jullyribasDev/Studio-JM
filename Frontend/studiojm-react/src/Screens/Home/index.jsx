@@ -3,7 +3,7 @@ import Footer from "../../Components/Footer";
 import Fundo from '../../Assets/sobrancelhas.jpg';
 import Salao from '../../Assets/salao.jpg';
 import './style.css'
-import CardServico from "../../Components/Servicos";
+import CardProfissional from "../../Components/CardProfissional";
 
 function Home() {
     return (
@@ -29,8 +29,8 @@ function Home() {
                 </div>
             </section>
             <section id="2" className="container-service">
-                <span className="service-span">Serviços</span>
-                <CardServico />
+                <span className="service-span">Profissionais</span>
+                <CardProfissional />
             </section>
             <section id="3" className="container-depoiments">
                 <span className="span-depoiments">Comentários</span>

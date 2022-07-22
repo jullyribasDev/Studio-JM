@@ -19,16 +19,15 @@ function Header() {
                     </div>
                     <ul className="left-navbar">
                         <li className="nav-left"><a className='a' href="#1">Sobre o Salão</a></li>
-                        <li className="nav-left"><Link className='a' to="/profissionais">Nossa Equipe</Link></li>
-                        <li className="nav-left"><Link className='a' to="/servicos">Serviços</Link></li>
+                        <li className="nav-left"><Link className='a' to="/profissionais">Profissionais</Link></li>
                         <li className="nav-left"><a className='a' href="#3">Depoimentos</a></li>
                         <li className="nav-left"><Link className='a' to="/agendamentos">Agendamentos</Link></li>
                     </ul>
                 </nav>
                 <nav className="nav-log">
-                    <a className="cadastro" href="#0">Cadastre-se</a>
+                    <Link className="cadastro" to="/cadastro">Cadastre-se</Link>
                     <div className="container-log">
-                        <Link className="login" to="/updateProfissional">Login</Link>
+                        <Link className="login" to="/login">Login</Link>
                         <img className="log-img" src={Perfil} alt="Login" />
                     </div>
                 </nav>

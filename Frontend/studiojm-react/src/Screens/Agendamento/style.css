@@ -191,6 +191,9 @@
     background-color: #1d7bb1;
     box-shadow: 0px 1px 1px black;
 }
+.button-agendamento:checked{
+    background-color: red;
+}
 
 @media(min-width:480px) {
     .container-atendimento {

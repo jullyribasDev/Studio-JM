@@ -5,9 +5,9 @@ const usuarioController = require('../controllers/clienteController');
 
 /* GET users listing. */
 router.get('/', usuarioController.allClientes);
-router.get('/search', usuarioController.oneCliente);
 
 router.post('/cadastro', usuarioController.create);
+router.post('/login', usuarioController.login);
 
 router.put('/atualizar/:id', usuarioController.update);
 

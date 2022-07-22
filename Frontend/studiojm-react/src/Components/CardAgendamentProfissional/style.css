@@ -57,6 +57,19 @@ body {
     padding: 3px 1px;
     font-size: 12px;
 }
+.button-agend-profissional{
+    font-weight: 600;
+    width: 40%;
+    padding: 8px;
+    background-color: rgb(255, 79, 79);
+    transition: all 0.3s;
+    border-radius: 3px;
+}
+.button-agend-profissional:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
 
 @media(min-width:480px){
     .card-agendamento{
@@ -116,4 +129,5 @@ body {
     .card-agendamento{
         width: 30%;
     }
+    
 }

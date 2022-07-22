@@ -16,19 +16,13 @@ module.exports = {
         }
       },
       fk_cliente: {
+        allowNull: false,
         type: Sequelize.INTEGER,
         references: {
           model: "cliente",
           key: "id_cliente"
         }
       },
-      fk_service: {
-        type: Sequelize.INTEGER,
-        references:{
-            model: "servico",
-            key: "id_service"
-        }
-    },
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false
